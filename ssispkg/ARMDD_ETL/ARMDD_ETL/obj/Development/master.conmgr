@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="(local).master1"
+  DTS:DTSID="{85F16CAC-708C-4DE1-9D85-C834AF6C8CF5}"
+  DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=(local);Initial Catalog=master;Integrated Security=True;TrustServerCertificate=True;Application Name=SSIS-ARMDD_ETL-{85F16CAC-708C-4DE1-9D85-C834AF6C8CF5}(local).master1;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
