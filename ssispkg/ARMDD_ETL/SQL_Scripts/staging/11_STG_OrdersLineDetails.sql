@@ -3,13 +3,11 @@ IF OBJECT_ID('stg.STG_OrdersLineDetails', 'U') IS NOT NULL
 GO
 
 CREATE TABLE stg.STG_OrdersLineDetails (
-    OrderLineID        INT             NULL,
-    TaxAmount          DECIMAL(18,4)    NULL,
-    ShippingCost       DECIMAL(18,4)    NULL,
-    PromotionCode      VARCHAR(100)     NULL,
-    PromotionAmount    DECIMAL(18,4)    NULL,
-    LineStatus         VARCHAR(50)      NULL,
-
-    LoadDate           DATETIME DEFAULT GETDATE()
+    OrderLineID        INT NOT NULL,
+    Currency           NVARCHAR(3) NULL,
+    Discount           MONEY NULL,
+    PromotionDiscount  MONEY NULL,
+    CreatedDate        DATE NULL,
+    LastUpdateDate     DATE NULL,
 );
 GO

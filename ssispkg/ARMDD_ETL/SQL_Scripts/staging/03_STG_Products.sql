@@ -1,17 +1,15 @@
-IF OBJECT_ID('stg.STG_Products','U') IS NOT NULL DROP TABLE stg.STG_Products;
+IF OBJECT_ID('stg.STG_Products','U') IS NOT NULL 
+    DROP TABLE stg.STG_Products;
 GO
 
 CREATE TABLE stg.STG_Products (
     ProductID       INT           NOT NULL,
     ProductName     VARCHAR(255)  NULL,
-    AvailablePortal BIT           NULL,
+    AvailablePortal INT           NULL,   -- BIT dava erro se vazio, INT aceita 0,1 ou NULL
     BoxID           INT           NULL,
-    Active          BIT           NULL,
+    Active          INT           NULL,   -- BIT dava erro se vazio, INT aceita 0,1 ou NULL
     CategoryID      INT           NULL,
-    CategoryName    VARCHAR(100)  NULL,
-    CategoryGender  VARCHAR(20)   NULL,
     CreateDate      DATE          NULL,
     LastUpdateDate  DATE          NULL,
-    CONSTRAINT PK_STG_Products PRIMARY KEY (ProductID)
 );
 GO

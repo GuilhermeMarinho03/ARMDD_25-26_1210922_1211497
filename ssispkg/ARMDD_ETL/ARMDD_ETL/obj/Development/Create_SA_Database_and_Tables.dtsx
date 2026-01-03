@@ -11,8 +11,8 @@
   DTS:LocaleID="2070"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="41"
-  DTS:VersionGUID="{4C6FD91B-2D2F-4CDC-A775-8300B6E9E244}">
+  DTS:VersionBuild="49"
+  DTS:VersionGUID="{9AF5DB0D-8A04-4934-A091-A3F451DD5F7D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -45,9 +45,10 @@
       DTS:DTSID="{1E66DCA5-7EFD-43C6-AA5F-6597FF9582D4}"
       DTS:ObjectName="Load DAT Files">
       <DTS:PropertyExpression
-        DTS:Name="ConnectionString">@[$Project::PackagePath] + "\\Files\\"  + @[User::DatFilename] + ".dat"</DTS:PropertyExpression>
+        DTS:Name="ConnectionString">@[$Project::PackagePath] + "\\Files\\"  + @[User::DatFileName] + ".dat"</DTS:PropertyExpression>
       <DTS:ObjectData>
-        <DTS:ConnectionManager />
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\jgmar\Desktop\ARMDD\projFinal\ARMDD_25-26_1210922_1211497\ssispkg\ARMDD_ETL\Files\.dat" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -139,12 +140,13 @@
           DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:PropertyExpression
-            DTS:Name="DestinationTableName">"[" + @[User::DatFileName] + "]"</DTS:PropertyExpression>
+            DTS:Name="DestinationTableName">"stg.[" + @[User::DatFileName] + "]"</DTS:PropertyExpression>
           <DTS:ObjectData>
             <BulkInsertTask:BulkInsertTaskData
+              BulkInsertTask:CodePage="65001"
               BulkInsertTask:SourceConnectionName="{1E66DCA5-7EFD-43C6-AA5F-6597FF9582D4}"
               BulkInsertTask:DestinationConnectionName="{A289CDF1-2162-4415-AD45-1EC9F0166CCA}"
-              BulkInsertTask:DestinationTableName="[]"
+              BulkInsertTask:DestinationTableName="stg.[]"
               BulkInsertTask:FieldTerminator="Vertical Bar {|}" xmlns:BulkInsertTask="www.microsoft.com/sqlserver/dts/tasks/bulkinserttask" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -251,6 +253,17 @@
           Id="Package\Create Staging Area Database"
           TopLeft="153.571428898342,74.1764705232168" />
         <NodeLayout
+          Size="195.2,41.6"
+          Id="Package\Foreach DAT File\Load DAT File Into Table"
+          TopLeft="51.3714291218593,39.7411760858392" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="264,136"
+          Size="264,179.2"
+          Id="Package\Foreach DAT File"
+          TopLeft="207.14285758381,456.52941136454" />
+        <NodeLayout
           Size="160.8,41.6"
           Id="Package\Foreach Loop Container\Execute SA Script"
           TopLeft="66.0571433315471,38.2117644592141" />
@@ -295,43 +308,32 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="195.2,41.6"
-          Id="Package\Foreach DAT File\Load DAT File Into Table"
-          TopLeft="51.3714291218593,39.7411760858392" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="264,136"
-          Size="264,179.2"
-          Id="Package\Foreach DAT File"
-          TopLeft="207.14285758381,456.52941136454" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="297.942857477373,378.752941000853">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="41.200000106437,77.7764703636872"
+              EndConnector="41.200000106437,77.7764703636869"
               Start="0,0"
-              End="41.200000106437,70.2764703636872">
+              End="41.200000106437,70.2764703636869">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,34.8882351818436" />
+                    End="0,34.8882351818435" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,34.8882351818436"
-                    Point2="0,38.8882351818436"
-                    Point3="4,38.8882351818436" />
+                    Point1="0,34.8882351818435"
+                    Point2="0,38.8882351818435"
+                    Point3="4,38.8882351818435" />
                   <mssgle:LineSegment
-                    End="37.200000106437,38.8882351818436" />
+                    End="37.200000106437,38.8882351818435" />
                   <mssgle:CubicBezierSegment
-                    Point1="37.200000106437,38.8882351818436"
-                    Point2="41.200000106437,38.8882351818436"
-                    Point3="41.200000106437,42.8882351818436" />
+                    Point1="37.200000106437,38.8882351818435"
+                    Point2="41.200000106437,38.8882351818435"
+                    Point3="41.200000106437,42.8882351818435" />
                   <mssgle:LineSegment
-                    End="41.200000106437,70.2764703636872" />
+                    End="41.200000106437,70.2764703636869" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
