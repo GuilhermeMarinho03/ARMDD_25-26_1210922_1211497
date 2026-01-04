@@ -1,30 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jgmar\\Desktop\\ARMDD\\projFinal\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\",
+  "WorkspaceRootPath": "C:\\Users\\rui.couto\\source\\repos\\GuilhermeMarinho03\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6EA492EF-C247-0E20-70D1-E7FBB5A94D31}|ARMDD_ETL\\ARMDD_ETL.dtproj|C:\\Users\\jgmar\\Desktop\\ARMDD\\projFinal\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Create_SA_Database_and_Tables.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "AbsoluteMoniker": "D:0:0:{6EA492EF-C247-0E20-70D1-E7FBB5A94D31}|ARMDD_ETL\\ARMDD_ETL.dtproj|C:\\Users\\rui.couto\\source\\repos\\GuilhermeMarinho03\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Create_DM_Database_and_Tables.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{6EA492EF-C247-0E20-70D1-E7FBB5A94D31}|ARMDD_ETL\\ARMDD_ETL.dtproj|solutionrelative:ARMDD_ETL\\Create_DM_Database_and_Tables.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA492EF-C247-0E20-70D1-E7FBB5A94D31}|ARMDD_ETL\\ARMDD_ETL.dtproj|C:\\Users\\rui.couto\\source\\repos\\GuilhermeMarinho03\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Create_SA_Database_and_Tables.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
       "RelativeMoniker": "D:0:0:{6EA492EF-C247-0E20-70D1-E7FBB5A94D31}|ARMDD_ETL\\ARMDD_ETL.dtproj|solutionrelative:ARMDD_ETL\\Create_SA_Database_and_Tables.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EA492EF-C247-0E20-70D1-E7FBB5A94D31}|ARMDD_ETL\\ARMDD_ETL.dtproj|C:\\Users\\jgmar\\Desktop\\ARMDD\\projFinal\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Project.params||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
-      "RelativeMoniker": "D:0:0:{6EA492EF-C247-0E20-70D1-E7FBB5A94D31}|ARMDD_ETL\\ARMDD_ETL.dtproj|solutionrelative:ARMDD_ETL\\Project.params||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA492EF-C247-0E20-70D1-E7FBB5A94D31}|ARMDD_ETL\\ARMDD_ETL.dtproj|C:\\Users\\jgmar\\Desktop\\ARMDD\\projFinal\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Load_Facts_And_Aggregates.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
-      "RelativeMoniker": "D:0:0:{6EA492EF-C247-0E20-70D1-E7FBB5A94D31}|ARMDD_ETL\\ARMDD_ETL.dtproj|solutionrelative:ARMDD_ETL\\Load_Facts_And_Aggregates.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA492EF-C247-0E20-70D1-E7FBB5A94D31}|ARMDD_ETL\\ARMDD_ETL.dtproj|C:\\Users\\jgmar\\Desktop\\ARMDD\\projFinal\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Main.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "AbsoluteMoniker": "D:0:0:{6EA492EF-C247-0E20-70D1-E7FBB5A94D31}|ARMDD_ETL\\ARMDD_ETL.dtproj|C:\\Users\\rui.couto\\source\\repos\\GuilhermeMarinho03\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Main.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
       "RelativeMoniker": "D:0:0:{6EA492EF-C247-0E20-70D1-E7FBB5A94D31}|ARMDD_ETL\\ARMDD_ETL.dtproj|solutionrelative:ARMDD_ETL\\Main.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EA492EF-C247-0E20-70D1-E7FBB5A94D31}|ARMDD_ETL\\ARMDD_ETL.dtproj|C:\\Users\\jgmar\\Desktop\\ARMDD\\projFinal\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Load_Business_Dimensions.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "AbsoluteMoniker": "D:0:0:{6EA492EF-C247-0E20-70D1-E7FBB5A94D31}|ARMDD_ETL\\ARMDD_ETL.dtproj|C:\\Users\\rui.couto\\source\\repos\\GuilhermeMarinho03\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Load_Business_Dimensions.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
       "RelativeMoniker": "D:0:0:{6EA492EF-C247-0E20-70D1-E7FBB5A94D31}|ARMDD_ETL\\ARMDD_ETL.dtproj|solutionrelative:ARMDD_ETL\\Load_Business_Dimensions.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EA492EF-C247-0E20-70D1-E7FBB5A94D31}|ARMDD_ETL\\ARMDD_ETL.dtproj|C:\\Users\\jgmar\\Desktop\\ARMDD\\projFinal\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Create_DM_Database_and_Tables.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
-      "RelativeMoniker": "D:0:0:{6EA492EF-C247-0E20-70D1-E7FBB5A94D31}|ARMDD_ETL\\ARMDD_ETL.dtproj|solutionrelative:ARMDD_ETL\\Create_DM_Database_and_Tables.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+      "AbsoluteMoniker": "D:0:0:{6EA492EF-C247-0E20-70D1-E7FBB5A94D31}|ARMDD_ETL\\ARMDD_ETL.dtproj|C:\\Users\\rui.couto\\source\\repos\\GuilhermeMarinho03\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Load_Facts_And_Aggregates.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{6EA492EF-C247-0E20-70D1-E7FBB5A94D31}|ARMDD_ETL\\ARMDD_ETL.dtproj|solutionrelative:ARMDD_ETL\\Load_Facts_And_Aggregates.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA492EF-C247-0E20-70D1-E7FBB5A94D31}|ARMDD_ETL\\ARMDD_ETL.dtproj|C:\\Users\\rui.couto\\source\\repos\\GuilhermeMarinho03\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Project.params||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{6EA492EF-C247-0E20-70D1-E7FBB5A94D31}|ARMDD_ETL\\ARMDD_ETL.dtproj|solutionrelative:ARMDD_ETL\\Project.params||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,19 +34,39 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create_SA_Database_and_Tables.dtsx [Design]",
+              "DocumentMoniker": "C:\\Users\\rui.couto\\source\\repos\\GuilhermeMarinho03\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Create_SA_Database_and_Tables.dtsx",
+              "RelativeDocumentMoniker": "ARMDD_ETL\\Create_SA_Database_and_Tables.dtsx",
+              "ToolTip": "C:\\Users\\rui.couto\\source\\repos\\GuilhermeMarinho03\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Create_SA_Database_and_Tables.dtsx [Design]",
+              "RelativeToolTip": "ARMDD_ETL\\Create_SA_Database_and_Tables.dtsx [Design]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMlSURBVDhPjZQ7bJtVGIaf41vsOk7ihICdxK1wiWiTFhW1QBEDapEQAnVoOzGUAalDNybECgsINqQOrBUDGzAgIUCVijoUqAQoTuM4JW4dO3Yuvvz2/9v//TC4/mM7ROGVPumc73zvq/d85yIAPvniq9/S8ydf4hComk5lZ/fHv\u002B7fu/nd11/\u002BMLyOlDLQG59Mz5CamRosGMLdP1ZZWlk9r1mIK\u002B99wM/f37rTUmqqVyCE8ANcePPS9RdfWJidS0xxJDxyYOSL21iOGx6NRie3qsrs9NOJWkdt1rSW0u5p\u002Bjz1/wm/348r5eT2bu1iPJG\u002BFhmdmO9fHxDUTYfthuGFptsY1l5O1V0e5ov8nckSG42GipvlKy1Ve65fw\u002BshQHajxbf3Kt78jTPTTI\u002BF\u002BObXEgAtxSCeSPPOsyksy\u002Ban23f62F0MOHQl6K6P9vgM2sQsVjjWzTnQHksg506wcPYsr7\u002B8SDAYRAjRT4dhQQCkizA0hK4hbPNJTiKMDgHLIBYOMTE\u002BNszyMCA4Hg2yOBflVNzmdNxiOuwSiwRYTI1yatJmcdwiHnLoOP2sQQz08HgyyvFktD8FwLULKSSgW6BaUKjUhks87N/yAdAtaFmgGNC2wR8MAYf08J\u002Byxq3bG14sPW7iuNCxu86ahqRhSFRTIBFw2KEomsVyUSNTD7JUD1Jp\u002B9EdaJmgGJKG0XWomRLp2CBlPx2GBQEQPuRIBBmOYooAqtlzBnUdqk2TmqKju0Fik0mS6dML8dSZixw5dm6foE9A2OcSaZSJ1Es4quqJNXRodCSlrSaPNhq0gzMsnH\u002BbS\u002B9//OG5q5//wtF3bzJ8yidSMW5MRTAsUG1whZ\u002Bm2d1m0wTNAsuFuaciXH0tyW5Dp7SlUSlU90z1Btn1Te7ef8DSgxwrqznW13KsraywtpxhM5ehsZ5BLy7jNre6RCnptC2q9Q4t7ckD6Dk0TZs/Mzl2qgffrx4CE0cZOfY8hbLKWkEh\u002B1ihUvV\u002Br65gPv9webepy0Kh2M/9Tzwz/2rSFImU1Drkyy0elVVKO3uC\u002By/SYUi89RGzlz8dTqPlfyf72Sv/AiuphR\u002BNLPK3AAAAAElFTkSuQmCC",
+              "WhenOpened": "2025-12-31T00:58:41.903Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{f4e46f1e-cf83-40aa-b568-a627394bc994}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Project.params [Design]",
-              "DocumentMoniker": "C:\\Users\\jgmar\\Desktop\\ARMDD\\projFinal\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Project.params",
+              "DocumentMoniker": "C:\\Users\\rui.couto\\source\\repos\\GuilhermeMarinho03\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Project.params",
               "RelativeDocumentMoniker": "ARMDD_ETL\\Project.params",
-              "ToolTip": "C:\\Users\\jgmar\\Desktop\\ARMDD\\projFinal\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Project.params [Design]",
+              "ToolTip": "C:\\Users\\rui.couto\\source\\repos\\GuilhermeMarinho03\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Project.params [Design]",
               "RelativeToolTip": "ARMDD_ETL\\Project.params [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-01-01T22:11:40.393Z",
@@ -54,11 +74,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Main.dtsx [Design]",
-              "DocumentMoniker": "C:\\Users\\jgmar\\Desktop\\ARMDD\\projFinal\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Main.dtsx",
+              "DocumentMoniker": "C:\\Users\\rui.couto\\source\\repos\\GuilhermeMarinho03\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Main.dtsx",
               "RelativeDocumentMoniker": "ARMDD_ETL\\Main.dtsx",
-              "ToolTip": "C:\\Users\\jgmar\\Desktop\\ARMDD\\projFinal\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Main.dtsx [Design]",
+              "ToolTip": "C:\\Users\\rui.couto\\source\\repos\\GuilhermeMarinho03\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Main.dtsx [Design]",
               "RelativeToolTip": "ARMDD_ETL\\Main.dtsx [Design]",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMlSURBVDhPjZQ7bJtVGIaf41vsOk7ihICdxK1wiWiTFhW1QBEDapEQAnVoOzGUAalDNybECgsINqQOrBUDGzAgIUCVijoUqAQoTuM4JW4dO3Yuvvz2/9v//TC4/mM7ROGVPumc73zvq/d85yIAPvniq9/S8ydf4hComk5lZ/fHv\u002B7fu/nd11/\u002BMLyOlDLQG59Mz5CamRosGMLdP1ZZWlk9r1mIK\u002B99wM/f37rTUmqqVyCE8ANcePPS9RdfWJidS0xxJDxyYOSL21iOGx6NRie3qsrs9NOJWkdt1rSW0u5p\u002Bjz1/wm/348r5eT2bu1iPJG\u002BFhmdmO9fHxDUTYfthuGFptsY1l5O1V0e5ov8nckSG42GipvlKy1Ve65fw\u002BshQHajxbf3Kt78jTPTTI\u002BF\u002BObXEgAtxSCeSPPOsyksy\u002Ban23f62F0MOHQl6K6P9vgM2sQsVjjWzTnQHksg506wcPYsr7\u002B8SDAYRAjRT4dhQQCkizA0hK4hbPNJTiKMDgHLIBYOMTE\u002BNszyMCA4Hg2yOBflVNzmdNxiOuwSiwRYTI1yatJmcdwiHnLoOP2sQQz08HgyyvFktD8FwLULKSSgW6BaUKjUhks87N/yAdAtaFmgGNC2wR8MAYf08J\u002Byxq3bG14sPW7iuNCxu86ahqRhSFRTIBFw2KEomsVyUSNTD7JUD1Jp\u002B9EdaJmgGJKG0XWomRLp2CBlPx2GBQEQPuRIBBmOYooAqtlzBnUdqk2TmqKju0Fik0mS6dML8dSZixw5dm6foE9A2OcSaZSJ1Es4quqJNXRodCSlrSaPNhq0gzMsnH\u002BbS\u002B9//OG5q5//wtF3bzJ8yidSMW5MRTAsUG1whZ\u002Bm2d1m0wTNAsuFuaciXH0tyW5Dp7SlUSlU90z1Btn1Te7ef8DSgxwrqznW13KsraywtpxhM5ehsZ5BLy7jNre6RCnptC2q9Q4t7ckD6Dk0TZs/Mzl2qgffrx4CE0cZOfY8hbLKWkEh\u002B1ihUvV\u002Br65gPv9webepy0Kh2M/9Tzwz/2rSFImU1Drkyy0elVVKO3uC\u002By/SYUi89RGzlz8dTqPlfyf72Sv/AiuphR\u002BNLPK3AAAAAElFTkSuQmCC",
               "WhenOpened": "2025-12-23T00:19:16.448Z",
@@ -66,23 +86,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Create_SA_Database_and_Tables.dtsx [Design]",
-              "DocumentMoniker": "C:\\Users\\jgmar\\Desktop\\ARMDD\\projFinal\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Create_SA_Database_and_Tables.dtsx",
-              "RelativeDocumentMoniker": "ARMDD_ETL\\Create_SA_Database_and_Tables.dtsx",
-              "ToolTip": "C:\\Users\\jgmar\\Desktop\\ARMDD\\projFinal\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Create_SA_Database_and_Tables.dtsx [Design]",
-              "RelativeToolTip": "ARMDD_ETL\\Create_SA_Database_and_Tables.dtsx [Design]",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMlSURBVDhPjZQ7bJtVGIaf41vsOk7ihICdxK1wiWiTFhW1QBEDapEQAnVoOzGUAalDNybECgsINqQOrBUDGzAgIUCVijoUqAQoTuM4JW4dO3Yuvvz2/9v//TC4/mM7ROGVPumc73zvq/d85yIAPvniq9/S8ydf4hComk5lZ/fHv\u002B7fu/nd11/\u002BMLyOlDLQG59Mz5CamRosGMLdP1ZZWlk9r1mIK\u002B99wM/f37rTUmqqVyCE8ANcePPS9RdfWJidS0xxJDxyYOSL21iOGx6NRie3qsrs9NOJWkdt1rSW0u5p\u002Bjz1/wm/348r5eT2bu1iPJG\u002BFhmdmO9fHxDUTYfthuGFptsY1l5O1V0e5ov8nckSG42GipvlKy1Ve65fw\u002BshQHajxbf3Kt78jTPTTI\u002BF\u002BObXEgAtxSCeSPPOsyksy\u002Ban23f62F0MOHQl6K6P9vgM2sQsVjjWzTnQHksg506wcPYsr7\u002B8SDAYRAjRT4dhQQCkizA0hK4hbPNJTiKMDgHLIBYOMTE\u002BNszyMCA4Hg2yOBflVNzmdNxiOuwSiwRYTI1yatJmcdwiHnLoOP2sQQz08HgyyvFktD8FwLULKSSgW6BaUKjUhks87N/yAdAtaFmgGNC2wR8MAYf08J\u002Byxq3bG14sPW7iuNCxu86ahqRhSFRTIBFw2KEomsVyUSNTD7JUD1Jp\u002B9EdaJmgGJKG0XWomRLp2CBlPx2GBQEQPuRIBBmOYooAqtlzBnUdqk2TmqKju0Fik0mS6dML8dSZixw5dm6foE9A2OcSaZSJ1Es4quqJNXRodCSlrSaPNhq0gzMsnH\u002BbS\u002B9//OG5q5//wtF3bzJ8yidSMW5MRTAsUG1whZ\u002Bm2d1m0wTNAsuFuaciXH0tyW5Dp7SlUSlU90z1Btn1Te7ef8DSgxwrqznW13KsraywtpxhM5ehsZ5BLy7jNre6RCnptC2q9Q4t7ckD6Dk0TZs/Mzl2qgffrx4CE0cZOfY8hbLKWkEh\u002B1ihUvV\u002Br65gPv9webepy0Kh2M/9Tzwz/2rSFImU1Drkyy0elVVKO3uC\u002By/SYUi89RGzlz8dTqPlfyf72Sv/AiuphR\u002BNLPK3AAAAAElFTkSuQmCC",
-              "WhenOpened": "2025-12-31T00:58:41.903Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Load_Facts_And_Aggregates.dtsx [Design]",
-              "DocumentMoniker": "C:\\Users\\jgmar\\Desktop\\ARMDD\\projFinal\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Load_Facts_And_Aggregates.dtsx",
+              "DocumentMoniker": "C:\\Users\\rui.couto\\source\\repos\\GuilhermeMarinho03\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Load_Facts_And_Aggregates.dtsx",
               "RelativeDocumentMoniker": "ARMDD_ETL\\Load_Facts_And_Aggregates.dtsx",
-              "ToolTip": "C:\\Users\\jgmar\\Desktop\\ARMDD\\projFinal\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Load_Facts_And_Aggregates.dtsx [Design]",
+              "ToolTip": "C:\\Users\\rui.couto\\source\\repos\\GuilhermeMarinho03\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Load_Facts_And_Aggregates.dtsx [Design]",
               "RelativeToolTip": "ARMDD_ETL\\Load_Facts_And_Aggregates.dtsx [Design]",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMlSURBVDhPjZQ7bJtVGIaf41vsOk7ihICdxK1wiWiTFhW1QBEDapEQAnVoOzGUAalDNybECgsINqQOrBUDGzAgIUCVijoUqAQoTuM4JW4dO3Yuvvz2/9v//TC4/mM7ROGVPumc73zvq/d85yIAPvniq9/S8ydf4hComk5lZ/fHv\u002B7fu/nd11/\u002BMLyOlDLQG59Mz5CamRosGMLdP1ZZWlk9r1mIK\u002B99wM/f37rTUmqqVyCE8ANcePPS9RdfWJidS0xxJDxyYOSL21iOGx6NRie3qsrs9NOJWkdt1rSW0u5p\u002Bjz1/wm/348r5eT2bu1iPJG\u002BFhmdmO9fHxDUTYfthuGFptsY1l5O1V0e5ov8nckSG42GipvlKy1Ve65fw\u002BshQHajxbf3Kt78jTPTTI\u002BF\u002BObXEgAtxSCeSPPOsyksy\u002Ban23f62F0MOHQl6K6P9vgM2sQsVjjWzTnQHksg506wcPYsr7\u002B8SDAYRAjRT4dhQQCkizA0hK4hbPNJTiKMDgHLIBYOMTE\u002BNszyMCA4Hg2yOBflVNzmdNxiOuwSiwRYTI1yatJmcdwiHnLoOP2sQQz08HgyyvFktD8FwLULKSSgW6BaUKjUhks87N/yAdAtaFmgGNC2wR8MAYf08J\u002Byxq3bG14sPW7iuNCxu86ahqRhSFRTIBFw2KEomsVyUSNTD7JUD1Jp\u002B9EdaJmgGJKG0XWomRLp2CBlPx2GBQEQPuRIBBmOYooAqtlzBnUdqk2TmqKju0Fik0mS6dML8dSZixw5dm6foE9A2OcSaZSJ1Es4quqJNXRodCSlrSaPNhq0gzMsnH\u002BbS\u002B9//OG5q5//wtF3bzJ8yidSMW5MRTAsUG1whZ\u002Bm2d1m0wTNAsuFuaciXH0tyW5Dp7SlUSlU90z1Btn1Te7ef8DSgxwrqznW13KsraywtpxhM5ehsZ5BLy7jNre6RCnptC2q9Q4t7ckD6Dk0TZs/Mzl2qgffrx4CE0cZOfY8hbLKWkEh\u002B1ihUvV\u002Br65gPv9webepy0Kh2M/9Tzwz/2rSFImU1Drkyy0elVVKO3uC\u002By/SYUi89RGzlz8dTqPlfyf72Sv/AiuphR\u002BNLPK3AAAAAElFTkSuQmCC",
               "WhenOpened": "2025-12-31T01:03:05.093Z",
@@ -90,11 +98,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Load_Business_Dimensions.dtsx [Design]",
-              "DocumentMoniker": "C:\\Users\\jgmar\\Desktop\\ARMDD\\projFinal\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Load_Business_Dimensions.dtsx",
+              "DocumentMoniker": "C:\\Users\\rui.couto\\source\\repos\\GuilhermeMarinho03\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Load_Business_Dimensions.dtsx",
               "RelativeDocumentMoniker": "ARMDD_ETL\\Load_Business_Dimensions.dtsx",
-              "ToolTip": "C:\\Users\\jgmar\\Desktop\\ARMDD\\projFinal\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Load_Business_Dimensions.dtsx [Design]",
+              "ToolTip": "C:\\Users\\rui.couto\\source\\repos\\GuilhermeMarinho03\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Load_Business_Dimensions.dtsx [Design]",
               "RelativeToolTip": "ARMDD_ETL\\Load_Business_Dimensions.dtsx [Design]",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMlSURBVDhPjZQ7bJtVGIaf41vsOk7ihICdxK1wiWiTFhW1QBEDapEQAnVoOzGUAalDNybECgsINqQOrBUDGzAgIUCVijoUqAQoTuM4JW4dO3Yuvvz2/9v//TC4/mM7ROGVPumc73zvq/d85yIAPvniq9/S8ydf4hComk5lZ/fHv\u002B7fu/nd11/\u002BMLyOlDLQG59Mz5CamRosGMLdP1ZZWlk9r1mIK\u002B99wM/f37rTUmqqVyCE8ANcePPS9RdfWJidS0xxJDxyYOSL21iOGx6NRie3qsrs9NOJWkdt1rSW0u5p\u002Bjz1/wm/348r5eT2bu1iPJG\u002BFhmdmO9fHxDUTYfthuGFptsY1l5O1V0e5ov8nckSG42GipvlKy1Ve65fw\u002BshQHajxbf3Kt78jTPTTI\u002BF\u002BObXEgAtxSCeSPPOsyksy\u002Ban23f62F0MOHQl6K6P9vgM2sQsVjjWzTnQHksg506wcPYsr7\u002B8SDAYRAjRT4dhQQCkizA0hK4hbPNJTiKMDgHLIBYOMTE\u002BNszyMCA4Hg2yOBflVNzmdNxiOuwSiwRYTI1yatJmcdwiHnLoOP2sQQz08HgyyvFktD8FwLULKSSgW6BaUKjUhks87N/yAdAtaFmgGNC2wR8MAYf08J\u002Byxq3bG14sPW7iuNCxu86ahqRhSFRTIBFw2KEomsVyUSNTD7JUD1Jp\u002B9EdaJmgGJKG0XWomRLp2CBlPx2GBQEQPuRIBBmOYooAqtlzBnUdqk2TmqKju0Fik0mS6dML8dSZixw5dm6foE9A2OcSaZSJ1Es4quqJNXRodCSlrSaPNhq0gzMsnH\u002BbS\u002B9//OG5q5//wtF3bzJ8yidSMW5MRTAsUG1whZ\u002Bm2d1m0wTNAsuFuaciXH0tyW5Dp7SlUSlU90z1Btn1Te7ef8DSgxwrqznW13KsraywtpxhM5ehsZ5BLy7jNre6RCnptC2q9Q4t7ckD6Dk0TZs/Mzl2qgffrx4CE0cZOfY8hbLKWkEh\u002B1ihUvV\u002Br65gPv9webepy0Kh2M/9Tzwz/2rSFImU1Drkyy0elVVKO3uC\u002By/SYUi89RGzlz8dTqPlfyf72Sv/AiuphR\u002BNLPK3AAAAAElFTkSuQmCC",
               "WhenOpened": "2025-12-31T00:59:28.268Z",
@@ -102,11 +110,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Create_DM_Database_and_Tables.dtsx [Design]",
-              "DocumentMoniker": "C:\\Users\\jgmar\\Desktop\\ARMDD\\projFinal\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Create_DM_Database_and_Tables.dtsx",
+              "DocumentMoniker": "C:\\Users\\rui.couto\\source\\repos\\GuilhermeMarinho03\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Create_DM_Database_and_Tables.dtsx",
               "RelativeDocumentMoniker": "ARMDD_ETL\\Create_DM_Database_and_Tables.dtsx",
-              "ToolTip": "C:\\Users\\jgmar\\Desktop\\ARMDD\\projFinal\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Create_DM_Database_and_Tables.dtsx [Design]",
+              "ToolTip": "C:\\Users\\rui.couto\\source\\repos\\GuilhermeMarinho03\\ARMDD_25-26_1210922_1211497\\ssispkg\\ARMDD_ETL\\ARMDD_ETL\\Create_DM_Database_and_Tables.dtsx [Design]",
               "RelativeToolTip": "ARMDD_ETL\\Create_DM_Database_and_Tables.dtsx [Design]",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMlSURBVDhPjZQ7bJtVGIaf41vsOk7ihICdxK1wiWiTFhW1QBEDapEQAnVoOzGUAalDNybECgsINqQOrBUDGzAgIUCVijoUqAQoTuM4JW4dO3Yuvvz2/9v//TC4/mM7ROGVPumc73zvq/d85yIAPvniq9/S8ydf4hComk5lZ/fHv\u002B7fu/nd11/\u002BMLyOlDLQG59Mz5CamRosGMLdP1ZZWlk9r1mIK\u002B99wM/f37rTUmqqVyCE8ANcePPS9RdfWJidS0xxJDxyYOSL21iOGx6NRie3qsrs9NOJWkdt1rSW0u5p\u002Bjz1/wm/348r5eT2bu1iPJG\u002BFhmdmO9fHxDUTYfthuGFptsY1l5O1V0e5ov8nckSG42GipvlKy1Ve65fw\u002BshQHajxbf3Kt78jTPTTI\u002BF\u002BObXEgAtxSCeSPPOsyksy\u002Ban23f62F0MOHQl6K6P9vgM2sQsVjjWzTnQHksg506wcPYsr7\u002B8SDAYRAjRT4dhQQCkizA0hK4hbPNJTiKMDgHLIBYOMTE\u002BNszyMCA4Hg2yOBflVNzmdNxiOuwSiwRYTI1yatJmcdwiHnLoOP2sQQz08HgyyvFktD8FwLULKSSgW6BaUKjUhks87N/yAdAtaFmgGNC2wR8MAYf08J\u002Byxq3bG14sPW7iuNCxu86ahqRhSFRTIBFw2KEomsVyUSNTD7JUD1Jp\u002B9EdaJmgGJKG0XWomRLp2CBlPx2GBQEQPuRIBBmOYooAqtlzBnUdqk2TmqKju0Fik0mS6dML8dSZixw5dm6foE9A2OcSaZSJ1Es4quqJNXRodCSlrSaPNhq0gzMsnH\u002BbS\u002B9//OG5q5//wtF3bzJ8yidSMW5MRTAsUG1whZ\u002Bm2d1m0wTNAsuFuaciXH0tyW5Dp7SlUSlU90z1Btn1Te7ef8DSgxwrqznW13KsraywtpxhM5ehsZ5BLy7jNre6RCnptC2q9Q4t7ckD6Dk0TZs/Mzl2qgffrx4CE0cZOfY8hbLKWkEh\u002B1ihUvV\u002Br65gPv9webepy0Kh2M/9Tzwz/2rSFImU1Drkyy0elVVKO3uC\u002By/SYUi89RGzlz8dTqPlfyf72Sv/AiuphR\u002BNLPK3AAAAAElFTkSuQmCC",
               "WhenOpened": "2025-12-31T00:57:02.709Z",
