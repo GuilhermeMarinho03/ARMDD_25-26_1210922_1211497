@@ -2,15 +2,10 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>ARMDD_ETL</Name>
-    <LastWriteTime>2026-01-03T14:43:53.1934659Z</LastWriteTime>
+    <LastWriteTime>2026-01-05T19:43:56.8712596Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
-    <ProjectBuildItemInfo>
-      <Name>Main.dtsx</Name>
-      <LastWriteTime>2025-12-23T00:30:12.2482038Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Load_Facts_And_Aggregates.dtsx</Name>
       <LastWriteTime>2025-12-31T01:03:05.0667122Z</LastWriteTime>
@@ -18,12 +13,12 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Create_DM_Database_and_Tables.dtsx</Name>
-      <LastWriteTime>2025-12-31T00:57:02.6755134Z</LastWriteTime>
+      <LastWriteTime>2026-01-05T19:47:32.1573302Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Create_SA_Database_and_Tables.dtsx</Name>
-      <LastWriteTime>2026-01-03T16:00:29.3181131Z</LastWriteTime>
+      <LastWriteTime>2026-01-05T19:46:32.7501667Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -32,8 +27,13 @@
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
+      <Name>MainP.dtsx</Name>
+      <LastWriteTime>2026-01-05T19:43:56.8396729Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
       <Name>Load_Temporal_Dimensions.dtsx</Name>
-      <LastWriteTime>2025-12-31T01:23:15.6002959Z</LastWriteTime>
+      <LastWriteTime>2026-01-05T19:44:25.1616059Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
