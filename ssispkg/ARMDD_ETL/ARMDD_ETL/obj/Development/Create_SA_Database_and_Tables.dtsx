@@ -7,12 +7,12 @@
   DTS:CreatorName="MARINHO\jgmar"
   DTS:DTSID="{95B10066-D3AC-4092-B0F3-A33900BE2E8B}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LastModifiedProductVersion="16.0.5685.2"
   DTS:LocaleID="2070"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="54"
-  DTS:VersionGUID="{C815A0A2-C527-4C36-A39C-D073E5DB65F5}">
+  DTS:VersionBuild="55"
+  DTS:VersionGUID="{43F06449-E269-4E60-B3EB-42EAD7ADE837}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -48,7 +48,7 @@
         DTS:Name="ConnectionString">@[$Project::PackagePath] + "\\Files\\"  + @[User::DatFileName] + ".dat"</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="C:\GuilhermeMarinho03\ARMDD_25-26_1210922_1211497\ssispkg\ARMDD_ETL\Files\.dat" />
+          DTS:ConnectionString="C:\Users\jgmar\Desktop\ARMDD\DERRADEIRO\ARMDD_25-26_1210922_1211497\ssispkg\ARMDD_ETL\Files\.dat" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -101,66 +101,6 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Foreach DAT File"
-      DTS:CreationName="STOCK:FOREACHLOOP"
-      DTS:Description="Foreach Loop Container"
-      DTS:DTSID="{25B5C7DE-0690-47CB-AE87-003B1B90BC93}"
-      DTS:ExecutableType="STOCK:FOREACHLOOP"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Foreach DAT File">
-      <DTS:ForEachEnumerator
-        DTS:CreationName="Microsoft.ForEachFileEnumerator"
-        DTS:DTSID="{BB0D8589-08EE-4B24-8D9C-47CC6FBB1771}"
-        DTS:ObjectName="{BB0D8589-08EE-4B24-8D9C-47CC6FBB1771}">
-        <DTS:PropertyExpression
-          DTS:Name="Directory">@[$Project::PackagePath] + "\\Files"</DTS:PropertyExpression>
-        <DTS:ObjectData>
-          <ForEachFileEnumeratorProperties>
-            <FEFEProperty
-              Folder="C:\GuilhermeMarinho03\ARMDD_25-26_1210922_1211497\ssispkg\ARMDD_ETL\Files" />
-            <FEFEProperty
-              FileSpec="*.dat" />
-            <FEFEProperty
-              FileNameRetrievalType="2" />
-            <FEFEProperty
-              Recurse="0" />
-          </ForEachFileEnumeratorProperties>
-        </DTS:ObjectData>
-      </DTS:ForEachEnumerator>
-      <DTS:Variables />
-      <DTS:Executables>
-        <DTS:Executable
-          DTS:refId="Package\Foreach DAT File\Load DAT File Into Table"
-          DTS:CreationName="Microsoft.BulkInsertTask"
-          DTS:Description="Bulk Insert Task"
-          DTS:DTSID="{EFDDADDF-947E-4B7A-AE21-CFC74164AD0C}"
-          DTS:ExecutableType="Microsoft.BulkInsertTask"
-          DTS:LocaleID="-1"
-          DTS:ObjectName="Load DAT File Into Table"
-          DTS:ThreadHint="0">
-          <DTS:Variables />
-          <DTS:PropertyExpression
-            DTS:Name="DestinationTableName">"stg.[" + @[User::DatFileName] + "]"</DTS:PropertyExpression>
-          <DTS:ObjectData>
-            <BulkInsertTask:BulkInsertTaskData
-              BulkInsertTask:CodePage="65001"
-              BulkInsertTask:SourceConnectionName="{1E66DCA5-7EFD-43C6-AA5F-6597FF9582D4}"
-              BulkInsertTask:DestinationConnectionName="{A289CDF1-2162-4415-AD45-1EC9F0166CCA}"
-              BulkInsertTask:DestinationTableName="stg.[]"
-              BulkInsertTask:FieldTerminator="Vertical Bar {|}" xmlns:BulkInsertTask="www.microsoft.com/sqlserver/dts/tasks/bulkinserttask" />
-          </DTS:ObjectData>
-        </DTS:Executable>
-      </DTS:Executables>
-      <DTS:ForEachVariableMappings>
-        <DTS:ForEachVariableMapping
-          DTS:CreationName=""
-          DTS:DTSID="{F0DF6CCF-A11E-40E3-88D7-B78637491AB9}"
-          DTS:ObjectName="{F0DF6CCF-A11E-40E3-88D7-B78637491AB9}"
-          DTS:ValueIndex="0"
-          DTS:VariableName="User::DatFileName" />
-      </DTS:ForEachVariableMappings>
-    </DTS:Executable>
-    <DTS:Executable
       DTS:refId="Package\Foreach Loop Container"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Foreach Loop Container"
@@ -177,7 +117,7 @@
         <DTS:ObjectData>
           <ForEachFileEnumeratorProperties>
             <FEFEProperty
-              Folder="C:\GuilhermeMarinho03\ARMDD_25-26_1210922_1211497\ssispkg\ARMDD_ETL\SQL_Scripts\staging" />
+              Folder="C:\Users\jgmar\Desktop\ARMDD\DERRADEIRO\ARMDD_25-26_1210922_1211497\ssispkg\ARMDD_ETL\SQL_Scripts\staging" />
             <FEFEProperty
               FileSpec="*.sql" />
             <FEFEProperty
@@ -227,14 +167,6 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
       DTS:To="Package\Foreach Loop Container" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
-      DTS:CreationName=""
-      DTS:DTSID="{F95EC13D-4806-41E3-9585-F6D6FC345FAA}"
-      DTS:From="Package\Foreach Loop Container"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 1"
-      DTS:To="Package\Foreach DAT File" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -247,22 +179,11 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="220,41.6"
           Id="Package\Create Staging Area Database"
           TopLeft="153.571428898342,74.1764705232168" />
-        <NodeLayout
-          Size="195.2,41.6"
-          Id="Package\Foreach DAT File\Load DAT File Into Table"
-          TopLeft="51.3714291218593,39.7411760858392" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="264,136"
-          Size="264,179.2"
-          Id="Package\Foreach DAT File"
-          TopLeft="207.14285758381,456.52941136454" />
         <NodeLayout
           Size="160.8,41.6"
           Id="Package\Foreach Loop Container\Execute SA Script"
@@ -300,40 +221,6 @@
                     Point3="34.371428579031,46.2882352388181" />
                   <mssgle:LineSegment
                     End="34.371428579031,77.0764704776362" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="297.942857477373,378.752941000853">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="41.200000106437,77.7764703636869"
-              Start="0,0"
-              End="41.200000106437,70.2764703636869">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.8882351818435" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,34.8882351818435"
-                    Point2="0,38.8882351818435"
-                    Point3="4,38.8882351818435" />
-                  <mssgle:LineSegment
-                    End="37.200000106437,38.8882351818435" />
-                  <mssgle:CubicBezierSegment
-                    Point1="37.200000106437,38.8882351818435"
-                    Point2="41.200000106437,38.8882351818435"
-                    Point3="41.200000106437,42.8882351818435" />
-                  <mssgle:LineSegment
-                    End="41.200000106437,70.2764703636869" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

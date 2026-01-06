@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="(local).PlusOrders"
+  DTS:DTSID="{0401A62A-0E0A-4127-AFC2-AFF4CFC910B8}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=(local);Initial Catalog=PlusOrders;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-ARMDD_ETL-{0401A62A-0E0A-4127-AFC2-AFF4CFC910B8}(local).PlusOrders;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
