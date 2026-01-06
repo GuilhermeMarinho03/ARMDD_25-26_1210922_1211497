@@ -1,15 +1,17 @@
 IF NOT EXISTS (SELECT name FROM sys.tables WHERE name = 'DimSite')
 BEGIN
-    CREATE TABLE [dbo].[DimSite](
-        [SiteKey]       [int] IDENTITY(1,1)    NOT NULL,
-        [SiteID]        [int]          NOT NULL,
-        [SiteName]      [nvarchar](255)  NULL,
-        [SiteURL]       [nvarchar](255)  NULL,
-        [SiteInitials]  [nvarchar](10)     NULL,
-        [IsSite]        [nvarchar](10)     NULL,
-        [EffectiveDate] [date]         NULL,
-        [ExpiredDate]   [date]         NULL,
-        [IsCurrent]     [nvarchar](3)      NULL,
-        CONSTRAINT [PK_DimSite] PRIMARY KEY CLUSTERED ([SiteKey] ASC)
+    CREATE TABLE dbo.DimSite
+    (
+        SiteKey INT IDENTITY(1,1) NOT NULL,
+        SiteID INT NOT NULL,
+        SiteName VARCHAR(255) NULL,
+        IsSite BIT NULL,
+        SiteURL VARCHAR(255) NULL,
+        Name VARCHAR(255) NULL,
+        Initials VARCHAR(20) NULL,
+        CurrencyCode VARCHAR(10) NULL,
+        CreateDate DATE NULL,
+        LastUpdateDate DATE NULL,
+        CONSTRAINT PK_DimSite PRIMARY KEY CLUSTERED (SiteKey ASC)
     );
 END

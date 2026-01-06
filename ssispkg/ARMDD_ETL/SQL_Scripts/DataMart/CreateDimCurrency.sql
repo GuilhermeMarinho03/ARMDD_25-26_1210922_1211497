@@ -1,9 +1,14 @@
 IF NOT EXISTS (SELECT name FROM sys.tables WHERE name = 'DimCurrency')
 BEGIN
-    CREATE TABLE [dbo].[DimCurrency](
-        [CurrencyKey]  [int]         NOT NULL,
-        [CurrencyCode] [char](3)     NULL,
-        [CurrencyName] [varchar](50) NULL,
-        CONSTRAINT [PK_DimCurrency] PRIMARY KEY CLUSTERED ([CurrencyKey] ASC)
+    CREATE TABLE dbo.DimCurrency
+    (
+        CurrencyKey INT IDENTITY(1,1) NOT NULL,
+        CurrencyCode NVARCHAR(10) NOT NULL,
+        CurrencyName NVARCHAR(100) NULL,
+        CurrencySymbol NVARCHAR(10) NULL,
+        CreateDate DATE NULL,
+        LastUpdateDate DATE NULL,
+        CONSTRAINT PK_DimCurrency PRIMARY KEY CLUSTERED (CurrencyKey ASC),
+        CONSTRAINT UQ_DimCurrency_CurrencyCode UNIQUE (CurrencyCode)
     );
 END
