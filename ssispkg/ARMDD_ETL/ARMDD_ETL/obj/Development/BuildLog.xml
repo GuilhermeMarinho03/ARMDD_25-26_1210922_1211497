@@ -2,38 +2,43 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>ARMDD_ETL</Name>
-    <LastWriteTime>2026-01-05T19:43:56.8712596Z</LastWriteTime>
+    <LastWriteTime>2026-01-06T16:54:24.865921Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Load_Facts_And_Aggregates.dtsx</Name>
-      <LastWriteTime>2025-12-31T01:03:05.0667122Z</LastWriteTime>
+      <LastWriteTime>2026-01-06T14:20:09.0632022Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Create_DM_Database_and_Tables.dtsx</Name>
-      <LastWriteTime>2026-01-05T19:47:32.1573302Z</LastWriteTime>
+      <LastWriteTime>2026-01-06T18:35:04.9289802Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Create_SA_Database_and_Tables.dtsx</Name>
-      <LastWriteTime>2026-01-05T19:46:32.7501667Z</LastWriteTime>
+      <LastWriteTime>2026-01-06T14:34:05.5995579Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Load_Business_Dimensions.dtsx</Name>
-      <LastWriteTime>2025-12-31T00:59:28.2448124Z</LastWriteTime>
+      <LastWriteTime>2026-01-06T18:22:57.2608575Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>MainP.dtsx</Name>
-      <LastWriteTime>2026-01-05T19:43:56.8396729Z</LastWriteTime>
+      <LastWriteTime>2026-01-06T14:24:09.6339655Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Load_Temporal_Dimensions.dtsx</Name>
-      <LastWriteTime>2026-01-05T19:44:25.1616059Z</LastWriteTime>
+      <LastWriteTime>2026-01-06T15:34:22.9968598Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Package1.dtsx</Name>
+      <LastWriteTime>2026-01-06T17:36:15.6698541Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

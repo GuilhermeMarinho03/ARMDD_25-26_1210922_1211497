@@ -7,12 +7,12 @@
   DTS:CreatorName="MARINHO\jgmar"
   DTS:DTSID="{95B10066-D3AC-4092-B0F3-A33900BE2E8B}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5685.2"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
   DTS:LocaleID="2070"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="50"
-  DTS:VersionGUID="{16B278F2-B67B-4800-BA86-13BA3818094E}">
+  DTS:VersionBuild="54"
+  DTS:VersionGUID="{C815A0A2-C527-4C36-A39C-D073E5DB65F5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -48,7 +48,7 @@
         DTS:Name="ConnectionString">@[$Project::PackagePath] + "\\Files\\"  + @[User::DatFileName] + ".dat"</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="C:\Users\jgmar\Desktop\ARMDD\projFinal\ARMDD_25-26_1210922_1211497\ssispkg\ARMDD_ETL\Files\.dat" />
+          DTS:ConnectionString="C:\GuilhermeMarinho03\ARMDD_25-26_1210922_1211497\ssispkg\ARMDD_ETL\Files\.dat" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -117,7 +117,7 @@
         <DTS:ObjectData>
           <ForEachFileEnumeratorProperties>
             <FEFEProperty
-              Folder="C:\Users\jgmar\Desktop\ARMDD\projFinal\ARMDD_25-26_1210922_1211497\ssispkg\ARMDD_ETL\Files" />
+              Folder="C:\GuilhermeMarinho03\ARMDD_25-26_1210922_1211497\ssispkg\ARMDD_ETL\Files" />
             <FEFEProperty
               FileSpec="*.dat" />
             <FEFEProperty
@@ -154,8 +154,8 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{021F9F23-2486-4E79-8687-0D468F8669E9}"
-          DTS:ObjectName="{021F9F23-2486-4E79-8687-0D468F8669E9}"
+          DTS:DTSID="{F0DF6CCF-A11E-40E3-88D7-B78637491AB9}"
+          DTS:ObjectName="{F0DF6CCF-A11E-40E3-88D7-B78637491AB9}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::DatFileName" />
       </DTS:ForEachVariableMappings>
@@ -177,7 +177,7 @@
         <DTS:ObjectData>
           <ForEachFileEnumeratorProperties>
             <FEFEProperty
-              Folder="C:\Users\jgmar\Desktop\ARMDD\projFinal\ARMDD_25-26_1210922_1211497\ssispkg\ARMDD_ETL\SQL_Scripts\staging" />
+              Folder="C:\GuilhermeMarinho03\ARMDD_25-26_1210922_1211497\ssispkg\ARMDD_ETL\SQL_Scripts\staging" />
             <FEFEProperty
               FileSpec="*.sql" />
             <FEFEProperty
@@ -211,8 +211,8 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{89E7BC70-24A0-47E3-9C66-E0E9B6D89C6E}"
-          DTS:ObjectName="{89E7BC70-24A0-47E3-9C66-E0E9B6D89C6E}"
+          DTS:DTSID="{2595C2C4-379B-4DD5-B707-356205A18247}"
+          DTS:ObjectName="{2595C2C4-379B-4DD5-B707-356205A18247}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::SqlFilePath" />
       </DTS:ForEachVariableMappings>

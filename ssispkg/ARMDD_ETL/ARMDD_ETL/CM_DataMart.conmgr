@@ -7,6 +7,6 @@
     <DTS:ConnectionManager
       DTS:ConnectRetryCount="1"
       DTS:ConnectRetryInterval="5"
-      DTS:ConnectionString="Data Source=(local);Initial Catalog=ARMDD_DataMart_1210922_1211497;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-ARMDD_ETL-{80371B82-F8FC-427F-B532-57ADE3AADE00}(local).ARMDD_DataMart_1210922_1211497;Auto Translate=False;" />
+      DTS:ConnectionString="Data Source=(local);Initial Catalog=ARMDD_DataMart_1210922_1211497;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-ARMDD_ETL-{80371B82-F8FC-427F-B532-57ADE3AADE00}(local).ARMDD_DataMart_1210922_1211497;" />
   </DTS:ObjectData>
 </DTS:ConnectionManager>
