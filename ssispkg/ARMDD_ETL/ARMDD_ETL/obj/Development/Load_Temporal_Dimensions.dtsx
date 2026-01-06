@@ -7,7 +7,7 @@
   DTS:CreatorName="MARINHO\jgmar"
   DTS:DTSID="{ADFF5478-10CB-4939-9573-B4832BDE0982}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5685.2"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
   DTS:LocaleID="2070"
   DTS:ObjectName="Load_Temporal_Dimensions"
   DTS:PackageType="5"

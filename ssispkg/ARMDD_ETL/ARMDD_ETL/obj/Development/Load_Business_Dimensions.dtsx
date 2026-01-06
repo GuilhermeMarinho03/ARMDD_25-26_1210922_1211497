@@ -7,13 +7,1212 @@
   DTS:CreatorName="MARINHO\jgmar"
   DTS:DTSID="{329B5795-F3C7-44A9-A76B-E7FCC277B700}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5685.2"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
   DTS:LocaleID="2070"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionGUID="{912450D4-1562-4AA0-9012-6DA5E316192C}">
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{F37FB62C-5F00-4FEE-A2FA-846E551C3654}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
-  <DTS:Executables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Load Business Dimensions"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:Disabled="True"
+      DTS:DTSID="{1E27977F-B5E6-4F4A-B700-A3E6BF550661}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load Business Dimensions">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Load Business Dimensions\Load DimSite"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{C2B4E166-941D-4263-8433-2D91B461D6D5}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Load DimSite"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Load Business Dimensions\Load DimSite\Data Conversion"
+                  componentClassID="Microsoft.DataConvert"
+                  contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Data Conversion"
+                  name="Data Conversion"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Load Business Dimensions\Load DimSite\Data Conversion.Inputs[Data Conversion Input]"
+                      name="Data Conversion Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\Data Conversion.Inputs[Data Conversion Input].Columns[MaximumSizeAvailable]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="MaximumSizeAvailable"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\372:invalid" />
+                        <inputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\Data Conversion.Inputs[Data Conversion Input].Columns[MinimumSizeAvailable]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="MinimumSizeAvailable"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\373:invalid" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Load Business Dimensions\Load DimSite\Data Conversion.Outputs[Data Conversion Output]"
+                      exclusionGroup="1"
+                      name="Data Conversion Output"
+                      synchronousInputId="Package\Load Business Dimensions\Load DimSite\Data Conversion.Inputs[Data Conversion Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\Data Conversion.Outputs[Data Conversion Output].Columns[Copy MaximumSizeAvailable]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\Data Conversion.Outputs[Data Conversion Output].Columns[Copy MaximumSizeAvailable]"
+                          name="Copy MaximumSizeAvailable"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Load Business Dimensions\Load DimSite\372:invalid}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\Data Conversion.Outputs[Data Conversion Output].Columns[Copy MinimumSizeAvailable]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\Data Conversion.Outputs[Data Conversion Output].Columns[Copy MinimumSizeAvailable]"
+                          name="Copy MinimumSizeAvailable"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Load Business Dimensions\Load DimSite\373:invalid}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Load Business Dimensions\Load DimSite\Data Conversion.Outputs[Data Conversion Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Data Conversion Error Output"
+                      synchronousInputId="Package\Load Business Dimensions\Load DimSite\Data Conversion.Inputs[Data Conversion Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Load Business Dimensions\Load DimSite\Lookup"
+                  componentClassID="Microsoft.Lookup"
+                  contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+                  description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+                  name="Lookup"
+                  usesDispositions="true"
+                  version="6">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the SQL statement that generates the lookup table."
+                      expressionType="Notify"
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [stg].[STG_Sites]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                      expressionType="Notify"
+                      name="SqlCommandParam"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the type of connection used to access the reference dataset."
+                      name="ConnectionType"
+                      typeConverter="LookupConnectionType">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the cache type of the lookup table."
+                      name="CacheType"
+                      typeConverter="CacheType">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                      name="NoMatchBehavior"
+                      typeConverter="LookupNoMatchBehavior">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                      name="NoMatchCachePercentage">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                      name="MaxMemoryUsage">25</property>
+                    <property
+                      dataType="System.Int64"
+                      description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                      name="MaxMemoryUsage64">25</property>
+                    <property
+                      dataType="System.String"
+                      description="Indicates whether to reference metadata in an XML format."
+                      name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="SiteID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SiteName" dataType="DT_STR" length="255" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="IsSite" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SiteURL" dataType="DT_STR" length="255" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Name" dataType="DT_STR" length="255" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Initials" dataType="DT_STR" length="20" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="CurrencyCode" dataType="DT_STR" length="10" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="CreateDate" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LastUpdateDate" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                      name="ParameterMap"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                      name="TreatDuplicateKeysAsError">false</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Load Business Dimensions\Load DimSite\Lookup.Connections[OleDbConnection]"
+                      connectionManagerID="{A289CDF1-2162-4415-AD45-1EC9F0166CCA}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[(local).ARMDD_StagingArea_1210922_1211497]"
+                      description="Connection manager used to access lookup data."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Load Business Dimensions\Load DimSite\Lookup.Inputs[Lookup Input]"
+                      name="Lookup Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\Lookup.Inputs[Lookup Input].Columns[SiteID]"
+                          cachedDataType="i4"
+                          cachedName="SiteID"
+                          errorOrTruncationOperation="Copy Column"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[SiteID]"
+                          truncationRowDisposition="FailComponent"
+                          usageType="readWrite">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Specifies the column in the reference table that a column joins."
+                              name="JoinToReferenceColumn" />
+                            <property
+                              dataType="System.String"
+                              description="Specifies the column in the reference table from which a column is copied."
+                              name="CopyFromReferenceColumn">SiteID</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\Lookup.Inputs[Lookup Input].Columns[SiteName]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Name"
+                          errorOrTruncationOperation="Copy Column"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]"
+                          name="SiteName"
+                          truncationRowDisposition="FailComponent"
+                          usageType="readWrite">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Specifies the column in the reference table that a column joins."
+                              name="JoinToReferenceColumn" />
+                            <property
+                              dataType="System.String"
+                              description="Specifies the column in the reference table from which a column is copied."
+                              name="CopyFromReferenceColumn">SiteName</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\Lookup.Inputs[Lookup Input].Columns[IsSite]"
+                          cachedDataType="bool"
+                          cachedName="IsSite"
+                          errorOrTruncationOperation="Copy Column"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[IsSite]"
+                          truncationRowDisposition="FailComponent"
+                          usageType="readWrite">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Specifies the column in the reference table that a column joins."
+                              name="JoinToReferenceColumn" />
+                            <property
+                              dataType="System.String"
+                              description="Specifies the column in the reference table from which a column is copied."
+                              name="CopyFromReferenceColumn">IsSite</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\Lookup.Inputs[Lookup Input].Columns[SiteURL]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="SiteURL"
+                          errorOrTruncationOperation="Copy Column"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[SiteURL]"
+                          truncationRowDisposition="FailComponent"
+                          usageType="readWrite">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Specifies the column in the reference table that a column joins."
+                              name="JoinToReferenceColumn" />
+                            <property
+                              dataType="System.String"
+                              description="Specifies the column in the reference table from which a column is copied."
+                              name="CopyFromReferenceColumn">SiteURL</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\Lookup.Inputs[Lookup Input].Columns[Name]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="SiteName"
+                          errorOrTruncationOperation="Copy Column"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[SiteName]"
+                          name="Name"
+                          truncationRowDisposition="FailComponent"
+                          usageType="readWrite">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Specifies the column in the reference table that a column joins."
+                              name="JoinToReferenceColumn" />
+                            <property
+                              dataType="System.String"
+                              description="Specifies the column in the reference table from which a column is copied."
+                              name="CopyFromReferenceColumn">Name</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\Lookup.Inputs[Lookup Input].Columns[Initials]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="20"
+                          cachedName="Initials"
+                          errorOrTruncationOperation="Copy Column"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[Initials]"
+                          truncationRowDisposition="FailComponent"
+                          usageType="readWrite">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Specifies the column in the reference table that a column joins."
+                              name="JoinToReferenceColumn" />
+                            <property
+                              dataType="System.String"
+                              description="Specifies the column in the reference table from which a column is copied."
+                              name="CopyFromReferenceColumn">Initials</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\Lookup.Inputs[Lookup Input].Columns[CurrencyCode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="10"
+                          cachedName="CurrencyCode"
+                          errorOrTruncationOperation="Copy Column"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[CurrencyCode]"
+                          truncationRowDisposition="FailComponent"
+                          usageType="readWrite">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Specifies the column in the reference table that a column joins."
+                              name="JoinToReferenceColumn" />
+                            <property
+                              dataType="System.String"
+                              description="Specifies the column in the reference table from which a column is copied."
+                              name="CopyFromReferenceColumn">CurrencyCode</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\Lookup.Inputs[Lookup Input].Columns[CreateDate]"
+                          cachedDataType="dbDate"
+                          cachedName="CreateDate"
+                          errorOrTruncationOperation="Copy Column"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[CreateDate]"
+                          truncationRowDisposition="FailComponent"
+                          usageType="readWrite">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Specifies the column in the reference table that a column joins."
+                              name="JoinToReferenceColumn" />
+                            <property
+                              dataType="System.String"
+                              description="Specifies the column in the reference table from which a column is copied."
+                              name="CopyFromReferenceColumn">CreateDate</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\Lookup.Inputs[Lookup Input].Columns[LastUpdateDate]"
+                          cachedDataType="dbDate"
+                          cachedName="LastUpdateDate"
+                          errorOrTruncationOperation="Copy Column"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[LastUpdateDate]"
+                          truncationRowDisposition="FailComponent"
+                          usageType="readWrite">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Specifies the column in the reference table that a column joins."
+                              name="JoinToReferenceColumn" />
+                            <property
+                              dataType="System.String"
+                              description="Specifies the column in the reference table from which a column is copied."
+                              name="CopyFromReferenceColumn">LastUpdateDate</property>
+                          </properties>
+                        </inputColumn>
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Load Business Dimensions\Load DimSite\Lookup.Outputs[Lookup Match Output]"
+                      errorOrTruncationOperation="Lookup"
+                      errorRowDisposition="FailComponent"
+                      exclusionGroup="1"
+                      name="Lookup Match Output"
+                      synchronousInputId="Package\Load Business Dimensions\Load DimSite\Lookup.Inputs[Lookup Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Load Business Dimensions\Load DimSite\Lookup.Outputs[Lookup No Match Output]"
+                      description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                      exclusionGroup="1"
+                      name="Lookup No Match Output"
+                      synchronousInputId="Package\Load Business Dimensions\Load DimSite\Lookup.Inputs[Lookup Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Load Business Dimensions\Load DimSite\Lookup.Outputs[Lookup Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Lookup Error Output"
+                      synchronousInputId="Package\Load Business Dimensions\Load DimSite\Lookup.Inputs[Lookup Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[DimSite]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="{80371B82-F8FC-427F-B532-57ADE3AADE00}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[(local).ARMDD_DataMart_1210922_1211497]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Name]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Name"
+                          externalMetadataColumnId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]" />
+                        <inputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CreateDate]"
+                          cachedDataType="dbDate"
+                          cachedName="CreateDate"
+                          externalMetadataColumnId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CreateDate]"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[CreateDate]" />
+                        <inputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LastUpdateDate]"
+                          cachedDataType="dbDate"
+                          cachedName="LastUpdateDate"
+                          externalMetadataColumnId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LastUpdateDate]"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[LastUpdateDate]" />
+                        <inputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SiteID]"
+                          cachedDataType="i4"
+                          cachedName="SiteID"
+                          externalMetadataColumnId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SiteID]"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[SiteID]" />
+                        <inputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SiteName]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="SiteName"
+                          externalMetadataColumnId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SiteName]"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[SiteName]" />
+                        <inputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IsSite]"
+                          cachedDataType="bool"
+                          cachedName="IsSite"
+                          externalMetadataColumnId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IsSite]"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[IsSite]" />
+                        <inputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SiteURL]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="SiteURL"
+                          externalMetadataColumnId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SiteURL]"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[SiteURL]" />
+                        <inputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Initials]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="20"
+                          cachedName="Initials"
+                          externalMetadataColumnId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Initials]"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[Initials]" />
+                        <inputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CurrencyCode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="10"
+                          cachedName="CurrencyCode"
+                          externalMetadataColumnId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CurrencyCode]"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[CurrencyCode]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SiteKey]"
+                          dataType="i4"
+                          name="SiteKey" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SiteID]"
+                          dataType="i4"
+                          name="SiteID" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SiteName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="SiteName" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IsSite]"
+                          dataType="bool"
+                          name="IsSite" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SiteURL]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="SiteURL" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Name" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Initials]"
+                          codePage="1252"
+                          dataType="str"
+                          length="20"
+                          name="Initials" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CurrencyCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          name="CurrencyCode" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CreateDate]"
+                          dataType="dbDate"
+                          name="CreateDate" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LastUpdateDate]"
+                          dataType="dbDate"
+                          name="LastUpdateDate" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[stg].[STG_Sites]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="{A289CDF1-2162-4415-AD45-1EC9F0166CCA}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[(local).ARMDD_StagingArea_1210922_1211497]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                          length="255"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]"
+                          name="Name"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[CreateDate]"
+                          dataType="dbDate"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CreateDate]"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[CreateDate]"
+                          name="CreateDate"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[LastUpdateDate]"
+                          dataType="dbDate"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[LastUpdateDate]"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[LastUpdateDate]"
+                          name="LastUpdateDate"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[SiteID]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SiteID]"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[SiteID]"
+                          name="SiteID"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[SiteName]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SiteName]"
+                          length="255"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[SiteName]"
+                          name="SiteName"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[IsSite]"
+                          dataType="bool"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IsSite]"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[IsSite]"
+                          name="IsSite"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[SiteURL]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SiteURL]"
+                          length="255"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[SiteURL]"
+                          name="SiteURL"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[Initials]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Initials]"
+                          length="20"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[Initials]"
+                          name="Initials"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[CurrencyCode]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CurrencyCode]"
+                          length="10"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].Columns[CurrencyCode]"
+                          name="CurrencyCode"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Name" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CreateDate]"
+                          dataType="dbDate"
+                          name="CreateDate" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[LastUpdateDate]"
+                          dataType="dbDate"
+                          name="LastUpdateDate" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SiteID]"
+                          dataType="i4"
+                          name="SiteID" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SiteName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="SiteName" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IsSite]"
+                          dataType="bool"
+                          name="IsSite" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SiteURL]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="SiteURL" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Initials]"
+                          codePage="1252"
+                          dataType="str"
+                          length="20"
+                          name="Initials" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CurrencyCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          name="CurrencyCode" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SiteID]"
+                          dataType="i4"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SiteID]"
+                          name="SiteID" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SiteName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SiteName]"
+                          name="SiteName" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IsSite]"
+                          dataType="bool"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IsSite]"
+                          name="IsSite" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SiteURL]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SiteURL]"
+                          name="SiteURL" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Name]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Name]"
+                          name="Name" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Initials]"
+                          codePage="1252"
+                          dataType="str"
+                          length="20"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Initials]"
+                          name="Initials" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CurrencyCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CurrencyCode]"
+                          name="CurrencyCode" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CreateDate]"
+                          dataType="dbDate"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CreateDate]"
+                          name="CreateDate" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[LastUpdateDate]"
+                          dataType="dbDate"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[LastUpdateDate]"
+                          name="LastUpdateDate" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Load Business Dimensions\Load DimSite\Slowly Changing Dimension"
+                  componentClassID="Microsoft.SCD"
+                  contactInfo="Slowly Changing Dimension;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;3"
+                  description="Updates a SQL Server Analysis Services data warehouse dimension. Update dimension records that are already present and  insert dimension records that aren't. For example, update the DimProduct table of the AdventureWorksDW OLAP database with data from the Products table in the AdventureWorks OLTP database."
+                  name="Slowly Changing Dimension"
+                  version="3">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the SELECT statement used to create a schema rowset."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the WHERE clause in the SELECT statement that selects the current row among rows with identical business keys."
+                      name="CurrentRowWhere"></property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether historical attribute updates are directed to the transformation output for changing attribute updates."
+                      name="UpdateChangingAttributeHistory">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the transformation fails when columns with fixed attributes contain changes."
+                      name="FailOnFixedAttributeChange">true</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the column name for the inferred member."
+                      name="InferredMemberIndicator"></property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether inferred member updates are detected."
+                      name="EnableInferredMember">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the transformation fails when a lookup of an existing record fails."
+                      name="FailOnLookupFailure">false</property>
+                    <property
+                      dataType="System.UInt32"
+                      description="Specifies that all rows in the input are new or the transformation detects the change type."
+                      name="IncomingRowChangeType"
+                      typeConverter="IncomingRowChangeType">1</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Load Business Dimensions\Load DimSite\Slowly Changing Dimension.Connections[LookupConnection]"
+                      description="Defines the connection to use for lookups in the dimension table"
+                      name="LookupConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Load Business Dimensions\Load DimSite\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]"
+                      name="Slowly Changing Dimension Input">
+                      <externalMetadataColumns
+                        isUsed="True" />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Load Business Dimensions\Load DimSite\Slowly Changing Dimension.Outputs[Unchanged Output]"
+                      description="Unchanged rows"
+                      exclusionGroup="1"
+                      name="Unchanged Output"
+                      synchronousInputId="Package\Load Business Dimensions\Load DimSite\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Load Business Dimensions\Load DimSite\Slowly Changing Dimension.Outputs[New Output]"
+                      description="New rows"
+                      exclusionGroup="1"
+                      name="New Output"
+                      synchronousInputId="Package\Load Business Dimensions\Load DimSite\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Load Business Dimensions\Load DimSite\Slowly Changing Dimension.Outputs[Fixed Attribute Output]"
+                      description="Rows with changes in columns tagged FixedAttribute"
+                      exclusionGroup="1"
+                      name="Fixed Attribute Output"
+                      synchronousInputId="Package\Load Business Dimensions\Load DimSite\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Load Business Dimensions\Load DimSite\Slowly Changing Dimension.Outputs[Changing Attribute Updates Output]"
+                      description="These rows contain new information for ChangingAttribute (Type 1) column changes"
+                      exclusionGroup="1"
+                      name="Changing Attribute Updates Output"
+                      synchronousInputId="Package\Load Business Dimensions\Load DimSite\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Load Business Dimensions\Load DimSite\Slowly Changing Dimension.Outputs[Historical Attribute Inserts Output]"
+                      description="HistoricalAttribute (Type 2) changes result in these new rows"
+                      exclusionGroup="2"
+                      name="Historical Attribute Inserts Output"
+                      synchronousInputId="Package\Load Business Dimensions\Load DimSite\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Load Business Dimensions\Load DimSite\Slowly Changing Dimension.Outputs[Inferred Member Updates Output]"
+                      description="Information to update unpopulated initial dimension row"
+                      exclusionGroup="1"
+                      name="Inferred Member Updates Output"
+                      synchronousInputId="Package\Load Business Dimensions\Load DimSite\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Load Business Dimensions\Load DimSite.Paths[OLE DB Source Output]"
+                  endId="Package\Load Business Dimensions\Load DimSite\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Load Business Dimensions\Load DimSite\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="140.8,41.6"
+          Id="Package\Load Business Dimensions\Load DimSite"
+          TopLeft="49.8000003512417,34.505882263792" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="584.8,268.8"
+          Size="584.8,312"
+          Id="Package\Load Business Dimensions"
+          TopLeft="115.000000244805,23.705882332162" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Load Business Dimensions\Load DimSite">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="208,41.6"
+          Id="Package\Load Business Dimensions\Load DimSite\Slowly Changing Dimension"
+          TopLeft="73.5714287280429,289.823529157723" />
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\Load Business Dimensions\Load DimSite\OLE DB Source"
+          TopLeft="115.000000244805,76.4705881682647" />
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\Load Business Dimensions\Load DimSite\Data Conversion"
+          TopLeft="390.000000830208,149.882352809799" />
+        <NodeLayout
+          Size="112.8,41.6"
+          Id="Package\Load Business Dimensions\Load DimSite\Lookup"
+          TopLeft="137.142857434798,190.411764538979" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Load Business Dimensions\Load DimSite\OLE DB Destination"
+          TopLeft="124.285714550286,410.647058463581" />
+        <EdgeLayout
+          Id="Package\Load Business Dimensions\Load DimSite.Paths[OLE DB Source Output]"
+          TopLeft="189.800000244805,118.070588168265">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="19.6857143054809,292.576470295317"
+              Start="0,0"
+              End="19.6857143054809,285.076470295317">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,142.288235147658" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,142.288235147658"
+                    Point2="0,146.288235147658"
+                    Point3="4,146.288235147658" />
+                  <mssgle:LineSegment
+                    End="15.6857143054809,146.288235147658" />
+                  <mssgle:CubicBezierSegment
+                    Point1="15.6857143054809,146.288235147658"
+                    Point2="19.6857143054809,146.288235147658"
+                    Point3="19.6857143054809,150.288235147658" />
+                  <mssgle:LineSegment
+                    End="19.6857143054809,285.076470295317" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Business Dimensions\Load DimSite\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Business Dimensions\Load DimSite\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[stg].[STG_Sites]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Business Dimensions\Load DimSite\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
