@@ -1,7 +1,6 @@
-IF OBJECT_ID('stg.STG_Country','U') IS NOT NULL DROP TABLE stg.STG_Country;
-GO
-
-CREATE TABLE stg.STG_Country (
+IF NOT EXISTS (SELECT name FROM sys.tables WHERE name = 'DimCountry')
+BEGIN
+    CREATE TABLE dbo.Country (
     CountryID      INT           NOT NULL,
     CountryName    VARCHAR(100)  NULL,
     CountryCode    VARCHAR(10)   NULL,
@@ -9,6 +8,6 @@ CREATE TABLE stg.STG_Country (
     IsEuroZone     BIT           NULL,
     CreateDate     DATE          NULL,
     LastUpdateDate DATE          NULL,
-    CONSTRAINT PK_STG_Country PRIMARY KEY (CountryID)
-);
-GO
+    CONSTRAINT PK_DimCountry PRIMARY KEY (CountryID)
+    );
+END
