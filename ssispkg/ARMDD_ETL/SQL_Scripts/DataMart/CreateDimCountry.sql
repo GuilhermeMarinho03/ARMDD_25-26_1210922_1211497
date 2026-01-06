@@ -1,6 +1,6 @@
 IF NOT EXISTS (SELECT name FROM sys.tables WHERE name = 'DimCountry')
 BEGIN
-    CREATE TABLE dbo.Country (
+    CREATE TABLE dbo.DimCountry (
     CountryID      INT           NOT NULL,
     CountryName    VARCHAR(100)  NULL,
     CountryCode    VARCHAR(10)   NULL,
