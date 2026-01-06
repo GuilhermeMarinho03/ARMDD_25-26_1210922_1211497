@@ -9,8 +9,8 @@ BEGIN
         GeographicRegion VARCHAR(50) NULL,
         [Language] VARCHAR(50) NULL,
         IsVipCustomer VARCHAR(5) NULL,
-        RegistrationDate VARCHAR(20) NULL,
-        LastUpdateDate VARCHAR(20) NULL,
+        RegistrationDate DATE NULL,
+        LastUpdateDate DATE NULL,
         CountryID VARCHAR(10) NULL,
         CONSTRAINT PK_DimCustomer PRIMARY KEY CLUSTERED (CustomerKey ASC),
         CONSTRAINT UQ_DimCustomer_CustomerID UNIQUE (CustomerID)
