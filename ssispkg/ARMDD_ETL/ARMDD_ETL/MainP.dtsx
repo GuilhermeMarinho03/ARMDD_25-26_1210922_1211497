@@ -7,12 +7,12 @@
   DTS:CreatorName="MARINHO\jgmar"
   DTS:DTSID="{19227773-3D30-4443-BA61-D7C4E259120F}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LastModifiedProductVersion="16.0.5685.2"
   DTS:LocaleID="2070"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="9"
-  DTS:VersionGUID="{3FC56DE0-F903-44E6-AC78-57553C1C3980}">
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{2EAB0A7C-C6CF-4878-89AF-0207B5AFF087}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -65,7 +65,6 @@
       DTS:refId="Package\Load_Business_Dimensions"
       DTS:CreationName="Microsoft.ExecutePackageTask"
       DTS:Description="Execute Package Task"
-      DTS:Disabled="True"
       DTS:DTSID="{0E474B2D-BF85-43A5-9722-E129761D2F17}"
       DTS:ExecutableType="Microsoft.ExecutePackageTask"
       DTS:LocaleID="-1"
@@ -75,6 +74,7 @@
       <DTS:ObjectData>
         <ExecutePackageTask>
           <UseProjectReference>True</UseProjectReference>
+          <PackageName>Load_Business_Dimensions.dtsx</PackageName>
         </ExecutePackageTask>
       </DTS:ObjectData>
     </DTS:Executable>
@@ -82,7 +82,6 @@
       DTS:refId="Package\Load_Facts_And_Aggregates"
       DTS:CreationName="Microsoft.ExecutePackageTask"
       DTS:Description="Execute Package Task"
-      DTS:Disabled="True"
       DTS:DTSID="{213B6559-6B1A-4A38-AEC4-B0FCC3506000}"
       DTS:ExecutableType="Microsoft.ExecutePackageTask"
       DTS:LocaleID="-1"
@@ -92,6 +91,7 @@
       <DTS:ObjectData>
         <ExecutePackageTask>
           <UseProjectReference>True</UseProjectReference>
+          <PackageName>Load_Facts_And_Aggregates.dtsx</PackageName>
         </ExecutePackageTask>
       </DTS:ObjectData>
     </DTS:Executable>
