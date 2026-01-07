@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>ARMDD_ETL</Name>
-    <LastWriteTime>2026-01-06T20:12:37.608105Z</LastWriteTime>
+    <LastWriteTime>2026-01-07T12:22:29.5092393Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -13,7 +13,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Create_DM_Database_and_Tables.dtsx</Name>
-      <LastWriteTime>2026-01-06T19:56:30.2143005Z</LastWriteTime>
+      <LastWriteTime>2026-01-07T12:50:28.8710895Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -23,7 +23,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Load_Business_Dimensions.dtsx</Name>
-      <LastWriteTime>2026-01-06T19:37:42.9950914Z</LastWriteTime>
+      <LastWriteTime>2026-01-06T21:26:28.3155471Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>

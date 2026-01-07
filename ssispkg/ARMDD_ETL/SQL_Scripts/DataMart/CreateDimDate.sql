@@ -5,12 +5,12 @@ BEGIN
         FullDate DATE NOT NULL,
         [Year] INT NOT NULL,
         [Month] INT NOT NULL,
-        MonthName VARCHAR(20) NOT NULL,
+        MonthName NVARCHAR(20) NOT NULL,
         [Quarter] INT NOT NULL,
         [Day] INT NOT NULL,
-        DayOfWeek VARCHAR(20) NOT NULL,
-        Weekend VARCHAR(20) NOT NULL,
+        DayOfWeek NVARCHAR(20) NOT NULL,
+        Weekend NVARCHAR(20) NOT NULL,
         WeekOfYear INT NOT NULL,
-        Season VARCHAR(20) NOT NULL
+        Season NVARCHAR(20) NOT NULL
     );
 END
