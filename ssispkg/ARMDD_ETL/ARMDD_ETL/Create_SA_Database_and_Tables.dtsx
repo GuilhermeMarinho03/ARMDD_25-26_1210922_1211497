@@ -11,8 +11,8 @@
   DTS:LocaleID="2070"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="55"
-  DTS:VersionGUID="{43F06449-E269-4E60-B3EB-42EAD7ADE837}">
+  DTS:VersionBuild="56"
+  DTS:VersionGUID="{5E598C7A-3B84-4A72-B01B-DD5103AC7B3F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -48,7 +48,7 @@
         DTS:Name="ConnectionString">@[$Project::PackagePath] + "\\Files\\"  + @[User::DatFileName] + ".dat"</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="C:\Users\jgmar\Desktop\ARMDD\DERRADEIRO\ARMDD_25-26_1210922_1211497\ssispkg\ARMDD_ETL\Files\.dat" />
+          DTS:ConnectionString="C:\GuilhermeMarinho03\ARMDD_25-26_1210922_1211497\ssispkg\ARMDD_ETL\Files\.dat" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -117,7 +117,7 @@
         <DTS:ObjectData>
           <ForEachFileEnumeratorProperties>
             <FEFEProperty
-              Folder="C:\Users\jgmar\Desktop\ARMDD\DERRADEIRO\ARMDD_25-26_1210922_1211497\ssispkg\ARMDD_ETL\SQL_Scripts\staging" />
+              Folder="C:\GuilhermeMarinho03\ARMDD_25-26_1210922_1211497\ssispkg\ARMDD_ETL\SQL_Scripts\staging" />
             <FEFEProperty
               FileSpec="*.sql" />
             <FEFEProperty
@@ -151,8 +151,8 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{2595C2C4-379B-4DD5-B707-356205A18247}"
-          DTS:ObjectName="{2595C2C4-379B-4DD5-B707-356205A18247}"
+          DTS:DTSID="{F8765A73-98AD-4894-8F35-0206E9FAB9AD}"
+          DTS:ObjectName="{F8765A73-98AD-4894-8F35-0206E9FAB9AD}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::SqlFilePath" />
       </DTS:ForEachVariableMappings>

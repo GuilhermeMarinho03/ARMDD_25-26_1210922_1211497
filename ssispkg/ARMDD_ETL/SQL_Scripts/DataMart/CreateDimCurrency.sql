@@ -8,6 +8,8 @@ BEGIN
         CurrencySymbol NVARCHAR(10) NULL,
         CreateDate DATE NULL,
         LastUpdateDate DATE NULL,
+        IsCurrent BIT NOT NULL DEFAULT 1,
+
         CONSTRAINT PK_DimCurrency PRIMARY KEY CLUSTERED (CurrencyKey ASC),
         CONSTRAINT UQ_DimCurrency_CurrencyCode UNIQUE (CurrencyCode)
     );
