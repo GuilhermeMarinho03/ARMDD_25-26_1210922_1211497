@@ -16,17 +16,17 @@ BEGIN
 
         Quantity INT NOT NULL,
 
-        UnitPrice_Local MONEY NOT NULL,
-        LineTotal_Local MONEY NOT NULL,
+        UnitPrice_Local MONEY,
+        LineTotal_Local MONEY,
 
-        UnitPrice_EUR MONEY NOT NULL,
-        LineTotal_EUR MONEY NOT NULL,
+        UnitPrice_EUR MONEY,
+        LineTotal_EUR MONEY,
 
-        ShippingCost_Local MONEY NULL,
-        ShippingCost_EUR MONEY NULL,
+        ShippingCost_Local MONEY,
+        ShippingCost_EUR MONEY,
 
-        Discount_Local MONEY NULL,
-        Discount_EUR MONEY NULL,
+        Discount_Local MONEY,
+        Discount_EUR MONEY,
 
         CONSTRAINT PK_FactOrderLine PRIMARY KEY
         (

@@ -3,6 +3,7 @@ BEGIN
     CREATE TABLE dbo.DimCurrency
     (
         CurrencyKey INT IDENTITY(1,1) NOT NULL,
+        CurrencyID INT NOT NULL,
         CurrencyCode NVARCHAR(10) NOT NULL,
         CurrencyName NVARCHAR(100) NULL,
         CurrencySymbol NVARCHAR(10) NULL,
