@@ -7,12 +7,12 @@
   DTS:CreatorName="MARINHO\jgmar"
   DTS:DTSID="{BA688F22-B605-4DC0-80D1-E2A26C252529}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5685.2"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
   DTS:LocaleID="2070"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="88"
-  DTS:VersionGUID="{E5DCE780-F771-4F56-8932-5F1FF3D0297F}">
+  DTS:VersionBuild="103"
+  DTS:VersionGUID="{D925B1DE-41F1-447A-AA8F-01324E9BF743}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1536,6 +1536,7 @@
       DTS:refId="Package\Sequence Container"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
+      DTS:Disabled="True"
       DTS:DTSID="{42B640F9-8598-4917-894D-99998214A7B3}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
@@ -1743,7 +1744,7 @@
                           cachedDataType="i4"
                           cachedName="SiteID"
                           errorOrTruncationOperation="Copy Column"
-                          lineageId="Package\Sequence Container\DimCustomer\404:invalid"
+                          lineageId="Package\Sequence Container\DimCustomer\431:invalid"
                           truncationRowDisposition="FailComponent"
                           usageType="readWrite">
                           <properties>
@@ -1764,7 +1765,7 @@
                           cachedLength="255"
                           cachedName="Name"
                           errorOrTruncationOperation="Copy Column"
-                          lineageId="Package\Sequence Container\DimCustomer\405:invalid"
+                          lineageId="Package\Sequence Container\DimCustomer\432:invalid"
                           name="SiteName"
                           truncationRowDisposition="FailComponent"
                           usageType="readWrite">
@@ -1784,7 +1785,7 @@
                           cachedDataType="bool"
                           cachedName="IsSite"
                           errorOrTruncationOperation="Copy Column"
-                          lineageId="Package\Sequence Container\DimCustomer\406:invalid"
+                          lineageId="Package\Sequence Container\DimCustomer\433:invalid"
                           truncationRowDisposition="FailComponent"
                           usageType="readWrite">
                           <properties>
@@ -1805,7 +1806,7 @@
                           cachedLength="255"
                           cachedName="SiteURL"
                           errorOrTruncationOperation="Copy Column"
-                          lineageId="Package\Sequence Container\DimCustomer\407:invalid"
+                          lineageId="Package\Sequence Container\DimCustomer\434:invalid"
                           truncationRowDisposition="FailComponent"
                           usageType="readWrite">
                           <properties>
@@ -1826,7 +1827,7 @@
                           cachedLength="255"
                           cachedName="SiteName"
                           errorOrTruncationOperation="Copy Column"
-                          lineageId="Package\Sequence Container\DimCustomer\408:invalid"
+                          lineageId="Package\Sequence Container\DimCustomer\435:invalid"
                           name="Name"
                           truncationRowDisposition="FailComponent"
                           usageType="readWrite">
@@ -1848,7 +1849,7 @@
                           cachedLength="20"
                           cachedName="Initials"
                           errorOrTruncationOperation="Copy Column"
-                          lineageId="Package\Sequence Container\DimCustomer\409:invalid"
+                          lineageId="Package\Sequence Container\DimCustomer\436:invalid"
                           truncationRowDisposition="FailComponent"
                           usageType="readWrite">
                           <properties>
@@ -1869,7 +1870,7 @@
                           cachedLength="10"
                           cachedName="CurrencyCode"
                           errorOrTruncationOperation="Copy Column"
-                          lineageId="Package\Sequence Container\DimCustomer\410:invalid"
+                          lineageId="Package\Sequence Container\DimCustomer\437:invalid"
                           truncationRowDisposition="FailComponent"
                           usageType="readWrite">
                           <properties>
@@ -1888,7 +1889,7 @@
                           cachedDataType="dbDate"
                           cachedName="CreateDate"
                           errorOrTruncationOperation="Copy Column"
-                          lineageId="Package\Sequence Container\DimCustomer\411:invalid"
+                          lineageId="Package\Sequence Container\DimCustomer\438:invalid"
                           truncationRowDisposition="FailComponent"
                           usageType="readWrite">
                           <properties>
@@ -2046,13 +2047,13 @@
                           cachedLength="255"
                           cachedName="Name"
                           externalMetadataColumnId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
-                          lineageId="Package\Sequence Container\DimCustomer\405:invalid" />
+                          lineageId="Package\Sequence Container\DimCustomer\432:invalid" />
                         <inputColumn
                           refId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CreateDate]"
                           cachedDataType="dbDate"
                           cachedName="CreateDate"
                           externalMetadataColumnId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CreateDate]"
-                          lineageId="Package\Sequence Container\DimCustomer\411:invalid" />
+                          lineageId="Package\Sequence Container\DimCustomer\438:invalid" />
                         <inputColumn
                           refId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LastUpdateDate]"
                           cachedDataType="dbDate"
@@ -2064,7 +2065,7 @@
                           cachedDataType="i4"
                           cachedName="SiteID"
                           externalMetadataColumnId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SiteID]"
-                          lineageId="Package\Sequence Container\DimCustomer\404:invalid" />
+                          lineageId="Package\Sequence Container\DimCustomer\431:invalid" />
                         <inputColumn
                           refId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SiteName]"
                           cachedCodepage="1252"
@@ -2072,13 +2073,13 @@
                           cachedLength="255"
                           cachedName="SiteName"
                           externalMetadataColumnId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SiteName]"
-                          lineageId="Package\Sequence Container\DimCustomer\408:invalid" />
+                          lineageId="Package\Sequence Container\DimCustomer\435:invalid" />
                         <inputColumn
                           refId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IsSite]"
                           cachedDataType="bool"
                           cachedName="IsSite"
                           externalMetadataColumnId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IsSite]"
-                          lineageId="Package\Sequence Container\DimCustomer\406:invalid" />
+                          lineageId="Package\Sequence Container\DimCustomer\433:invalid" />
                         <inputColumn
                           refId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SiteURL]"
                           cachedCodepage="1252"
@@ -2086,7 +2087,7 @@
                           cachedLength="255"
                           cachedName="SiteURL"
                           externalMetadataColumnId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SiteURL]"
-                          lineageId="Package\Sequence Container\DimCustomer\407:invalid" />
+                          lineageId="Package\Sequence Container\DimCustomer\434:invalid" />
                         <inputColumn
                           refId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Initials]"
                           cachedCodepage="1252"
@@ -2094,7 +2095,7 @@
                           cachedLength="20"
                           cachedName="Initials"
                           externalMetadataColumnId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Initials]"
-                          lineageId="Package\Sequence Container\DimCustomer\409:invalid" />
+                          lineageId="Package\Sequence Container\DimCustomer\436:invalid" />
                         <inputColumn
                           refId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CurrencyCode]"
                           cachedCodepage="1252"
@@ -2102,7 +2103,7 @@
                           cachedLength="10"
                           cachedName="CurrencyCode"
                           externalMetadataColumnId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CurrencyCode]"
-                          lineageId="Package\Sequence Container\DimCustomer\410:invalid" />
+                          lineageId="Package\Sequence Container\DimCustomer\437:invalid" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -2759,16 +2760,6 @@
                           name="Weekend"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
-                          refId="Package\Sequence Container\Is DimDate empty?\DimDate.Outputs[OLE DB Source Output].Columns[Season]"
-                          dataType="wstr"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Is DimDate empty?\DimDate.Outputs[OLE DB Source Output].ExternalColumns[Season]"
-                          length="20"
-                          lineageId="Package\Sequence Container\Is DimDate empty?\DimDate.Outputs[OLE DB Source Output].Columns[Season]"
-                          name="Season"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
                           refId="Package\Sequence Container\Is DimDate empty?\DimDate.Outputs[OLE DB Source Output].Columns[Day]"
                           dataType="i4"
                           errorOrTruncationOperation="Conversion"
@@ -2812,23 +2803,18 @@
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Is DimDate empty?\DimDate.Outputs[OLE DB Source Output].ExternalColumns[MonthName]"
                           dataType="wstr"
-                          length="20"
+                          length="50"
                           name="MonthName" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Is DimDate empty?\DimDate.Outputs[OLE DB Source Output].ExternalColumns[DayOfWeek]"
                           dataType="wstr"
-                          length="20"
+                          length="50"
                           name="DayOfWeek" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Is DimDate empty?\DimDate.Outputs[OLE DB Source Output].ExternalColumns[Weekend]"
                           dataType="wstr"
-                          length="20"
+                          length="50"
                           name="Weekend" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Is DimDate empty?\DimDate.Outputs[OLE DB Source Output].ExternalColumns[Season]"
-                          dataType="wstr"
-                          length="20"
-                          name="Season" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Is DimDate empty?\DimDate.Outputs[OLE DB Source Output].ExternalColumns[Day]"
                           dataType="i4"
@@ -2872,7 +2858,7 @@
                         <outputColumn
                           refId="Package\Sequence Container\Is DimDate empty?\DimDate.Outputs[OLE DB Source Error Output].Columns[MonthName]"
                           dataType="wstr"
-                          length="20"
+                          length="50"
                           lineageId="Package\Sequence Container\Is DimDate empty?\DimDate.Outputs[OLE DB Source Error Output].Columns[MonthName]"
                           name="MonthName" />
                         <outputColumn
@@ -2883,13 +2869,13 @@
                         <outputColumn
                           refId="Package\Sequence Container\Is DimDate empty?\DimDate.Outputs[OLE DB Source Error Output].Columns[DayOfWeek]"
                           dataType="wstr"
-                          length="20"
+                          length="50"
                           lineageId="Package\Sequence Container\Is DimDate empty?\DimDate.Outputs[OLE DB Source Error Output].Columns[DayOfWeek]"
                           name="DayOfWeek" />
                         <outputColumn
                           refId="Package\Sequence Container\Is DimDate empty?\DimDate.Outputs[OLE DB Source Error Output].Columns[Weekend]"
                           dataType="wstr"
-                          length="20"
+                          length="50"
                           lineageId="Package\Sequence Container\Is DimDate empty?\DimDate.Outputs[OLE DB Source Error Output].Columns[Weekend]"
                           name="Weekend" />
                         <outputColumn
@@ -2897,12 +2883,6 @@
                           dataType="i4"
                           lineageId="Package\Sequence Container\Is DimDate empty?\DimDate.Outputs[OLE DB Source Error Output].Columns[WeekOfYear]"
                           name="WeekOfYear" />
-                        <outputColumn
-                          refId="Package\Sequence Container\Is DimDate empty?\DimDate.Outputs[OLE DB Source Error Output].Columns[Season]"
-                          dataType="wstr"
-                          length="20"
-                          lineageId="Package\Sequence Container\Is DimDate empty?\DimDate.Outputs[OLE DB Source Error Output].Columns[Season]"
-                          name="Season" />
                         <outputColumn
                           refId="Package\Sequence Container\Is DimDate empty?\DimDate.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
@@ -3028,336 +3008,6 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Date_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Date_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Date_Name]"
-                          name="Date_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Year]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Year]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Year]"
-                          name="Year"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Year_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Year_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Year_Name]"
-                          name="Year_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Half_Year]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Half_Year]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Half_Year]"
-                          name="Half_Year"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Half_Year_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Half_Year_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Half_Year_Name]"
-                          name="Half_Year_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Quarter]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Quarter]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Quarter]"
-                          name="Quarter"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Quarter_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Quarter_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Quarter_Name]"
-                          name="Quarter_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Trimester]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Trimester]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Trimester]"
-                          name="Trimester"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Trimester_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Trimester_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Trimester_Name]"
-                          name="Trimester_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Month]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Month]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Month]"
-                          name="Month"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Month_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Month_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Month_Name]"
-                          name="Month_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Ten_Days]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Ten_Days]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Ten_Days]"
-                          name="Ten_Days"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Ten_Days_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Ten_Days_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Ten_Days_Name]"
-                          name="Ten_Days_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Week]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Week]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Week]"
-                          name="Week"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Week_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Week_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Week_Name]"
-                          name="Week_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
                           refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Year]"
                           codePage="1252"
                           dataType="str"
@@ -3367,160 +3017,6 @@
                           length="50"
                           lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Year]"
                           name="Day_Of_Year"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Year_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Day_Of_Year_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Year_Name]"
-                          name="Day_Of_Year_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Half_Year]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Day_Of_Half_Year]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Half_Year]"
-                          name="Day_Of_Half_Year"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Half_Year_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Day_Of_Half_Year_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Half_Year_Name]"
-                          name="Day_Of_Half_Year_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Trimester]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Day_Of_Trimester]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Trimester]"
-                          name="Day_Of_Trimester"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Trimester_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Day_Of_Trimester_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Trimester_Name]"
-                          name="Day_Of_Trimester_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Quarter]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Day_Of_Quarter]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Quarter]"
-                          name="Day_Of_Quarter"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Quarter_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Day_Of_Quarter_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Quarter_Name]"
-                          name="Day_Of_Quarter_Name"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -3556,72 +3052,6 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Month_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Day_Of_Month_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Month_Name]"
-                          name="Day_Of_Month_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Ten_Days]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Day_Of_Ten_Days]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Ten_Days]"
-                          name="Day_Of_Ten_Days"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Ten_Days_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Day_Of_Ten_Days_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Ten_Days_Name]"
-                          name="Day_Of_Ten_Days_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
                           refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Week]"
                           codePage="1252"
                           dataType="str"
@@ -3631,28 +3061,6 @@
                           length="50"
                           lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Week]"
                           name="Day_Of_Week"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Week_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Day_Of_Week_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Week_Name]"
-                          name="Day_Of_Week_Name"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -3688,248 +3096,6 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Week_Of_Year_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Week_Of_Year_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Week_Of_Year_Name]"
-                          name="Week_Of_Year_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Ten_Days_Of_Year]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Ten_Days_Of_Year]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Ten_Days_Of_Year]"
-                          name="Ten_Days_Of_Year"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Ten_Days_Of_Year_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Ten_Days_Of_Year_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Ten_Days_Of_Year_Name]"
-                          name="Ten_Days_Of_Year_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Ten_Days_Of_Half_Year]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Ten_Days_Of_Half_Year]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Ten_Days_Of_Half_Year]"
-                          name="Ten_Days_Of_Half_Year"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Ten_Days_Of_Half_Year_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Ten_Days_Of_Half_Year_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Ten_Days_Of_Half_Year_Name]"
-                          name="Ten_Days_Of_Half_Year_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Ten_Days_Of_Trimester]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Ten_Days_Of_Trimester]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Ten_Days_Of_Trimester]"
-                          name="Ten_Days_Of_Trimester"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Ten_Days_Of_Trimester_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Ten_Days_Of_Trimester_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Ten_Days_Of_Trimester_Name]"
-                          name="Ten_Days_Of_Trimester_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Ten_Days_Of_Quarter]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Ten_Days_Of_Quarter]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Ten_Days_Of_Quarter]"
-                          name="Ten_Days_Of_Quarter"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Ten_Days_Of_Quarter_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Ten_Days_Of_Quarter_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Ten_Days_Of_Quarter_Name]"
-                          name="Ten_Days_Of_Quarter_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Ten_Days_Of_Month]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Ten_Days_Of_Month]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Ten_Days_Of_Month]"
-                          name="Ten_Days_Of_Month"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Ten_Days_Of_Month_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Ten_Days_Of_Month_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Ten_Days_Of_Month_Name]"
-                          name="Ten_Days_Of_Month_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
                           refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Month_Of_Year]"
                           codePage="1252"
                           dataType="str"
@@ -3939,160 +3105,6 @@
                           length="50"
                           lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Month_Of_Year]"
                           name="Month_Of_Year"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Month_Of_Year_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Month_Of_Year_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Month_Of_Year_Name]"
-                          name="Month_Of_Year_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Month_Of_Half_Year]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Month_Of_Half_Year]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Month_Of_Half_Year]"
-                          name="Month_Of_Half_Year"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Month_Of_Half_Year_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Month_Of_Half_Year_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Month_Of_Half_Year_Name]"
-                          name="Month_Of_Half_Year_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Month_Of_Trimester]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Month_Of_Trimester]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Month_Of_Trimester]"
-                          name="Month_Of_Trimester"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Month_Of_Trimester_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Month_Of_Trimester_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Month_Of_Trimester_Name]"
-                          name="Month_Of_Trimester_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Month_Of_Quarter]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Month_Of_Quarter]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Month_Of_Quarter]"
-                          name="Month_Of_Quarter"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Month_Of_Quarter_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Month_Of_Quarter_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Month_Of_Quarter_Name]"
-                          name="Month_Of_Quarter_Name"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -4128,116 +3140,6 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Quarter_Of_Year_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Quarter_Of_Year_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Quarter_Of_Year_Name]"
-                          name="Quarter_Of_Year_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Quarter_Of_Half_Year]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Quarter_Of_Half_Year]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Quarter_Of_Half_Year]"
-                          name="Quarter_Of_Half_Year"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Quarter_Of_Half_Year_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Quarter_Of_Half_Year_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Quarter_Of_Half_Year_Name]"
-                          name="Quarter_Of_Half_Year_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Trimester_Of_Year]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Trimester_Of_Year]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Trimester_Of_Year]"
-                          name="Trimester_Of_Year"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Trimester_Of_Year_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Trimester_Of_Year_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Trimester_Of_Year_Name]"
-                          name="Trimester_Of_Year_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
                           refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Half_Year_Of_Year]"
                           codePage="1252"
                           dataType="str"
@@ -4247,292 +3149,6 @@
                           length="50"
                           lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Half_Year_Of_Year]"
                           name="Half_Year_Of_Year"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Half_Year_Of_Year_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[Half_Year_Of_Year_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Half_Year_Of_Year_Name]"
-                          name="Half_Year_Of_Year_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[ISO_8601_Year]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[ISO_8601_Year]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[ISO_8601_Year]"
-                          name="ISO_8601_Year"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[ISO_8601_Year_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[ISO_8601_Year_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[ISO_8601_Year_Name]"
-                          name="ISO_8601_Year_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[ISO_8601_Week]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[ISO_8601_Week]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[ISO_8601_Week]"
-                          name="ISO_8601_Week"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[ISO_8601_Week_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[ISO_8601_Week_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[ISO_8601_Week_Name]"
-                          name="ISO_8601_Week_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[ISO_8601_Day]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[ISO_8601_Day]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[ISO_8601_Day]"
-                          name="ISO_8601_Day"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[ISO_8601_Day_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[ISO_8601_Day_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[ISO_8601_Day_Name]"
-                          name="ISO_8601_Day_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[ISO_8601_Day_Of_Year]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[ISO_8601_Day_Of_Year]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[ISO_8601_Day_Of_Year]"
-                          name="ISO_8601_Day_Of_Year"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[ISO_8601_Day_Of_Year_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[ISO_8601_Day_Of_Year_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[ISO_8601_Day_Of_Year_Name]"
-                          name="ISO_8601_Day_Of_Year_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[ISO_8601_Day_Of_Week]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[ISO_8601_Day_Of_Week]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[ISO_8601_Day_Of_Week]"
-                          name="ISO_8601_Day_Of_Week"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[ISO_8601_Day_Of_Week_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[ISO_8601_Day_Of_Week_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[ISO_8601_Day_Of_Week_Name]"
-                          name="ISO_8601_Day_Of_Week_Name"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[ISO_8601_Week_Of_Year]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[ISO_8601_Week_Of_Year]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[ISO_8601_Week_Of_Year]"
-                          name="ISO_8601_Week_Of_Year"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the data is in binary format."
-                              name="UseBinaryFormat">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[ISO_8601_Week_Of_Year_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].ExternalColumns[ISO_8601_Week_Of_Year_Name]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[ISO_8601_Week_Of_Year_Name]"
-                          name="ISO_8601_Week_Of_Year_Name"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -5112,6 +3728,140 @@
                   </outputs>
                 </component>
                 <component
+                  refId="Package\Sequence Container\Load DimDate\Data Conversion"
+                  componentClassID="Microsoft.DataConvert"
+                  contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Data Conversion"
+                  name="Data Conversion"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\Load DimDate\Data Conversion.Inputs[Data Conversion Input]"
+                      name="Data Conversion Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\Load DimDate\Data Conversion.Inputs[Data Conversion Input].Columns[MonthName]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="MonthName"
+                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[MonthName]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load DimDate\Data Conversion.Inputs[Data Conversion Input].Columns[DayOfWeek]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="DayOfWeek"
+                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[DayOfWeek]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load DimDate\Data Conversion.Inputs[Data Conversion Input].Columns[Weekend]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Weekend"
+                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Weekend]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Load DimDate\Data Conversion.Outputs[Data Conversion Output]"
+                      exclusionGroup="1"
+                      name="Data Conversion Output"
+                      synchronousInputId="Package\Sequence Container\Load DimDate\Data Conversion.Inputs[Data Conversion Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Load DimDate\Data Conversion.Outputs[Data Conversion Output].Columns[MonthName_str]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Sequence Container\Load DimDate\Data Conversion.Outputs[Data Conversion Output].Columns[MonthName_str]"
+                          name="MonthName_str"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[MonthName]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\Load DimDate\Data Conversion.Outputs[Data Conversion Output].Columns[DayOfWeek_str]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Sequence Container\Load DimDate\Data Conversion.Outputs[Data Conversion Output].Columns[DayOfWeek_str]"
+                          name="DayOfWeek_str"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[DayOfWeek]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\Load DimDate\Data Conversion.Outputs[Data Conversion Output].Columns[Weekend_str]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Sequence Container\Load DimDate\Data Conversion.Outputs[Data Conversion Output].Columns[Weekend_str]"
+                          name="Weekend_str"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Weekend]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\Load DimDate\Data Conversion.Outputs[Data Conversion Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Data Conversion Error Output"
+                      synchronousInputId="Package\Sequence Container\Load DimDate\Data Conversion.Inputs[Data Conversion Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Load DimDate\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Load DimDate\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Load DimDate\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Load DimDate\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
                   refId="Package\Sequence Container\Load DimDate\OLE DB Destination"
                   componentClassID="Microsoft.OLEDBDestination"
                   contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
@@ -5184,53 +3934,74 @@
                       name="OLE DB Destination Input">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Year]"
+                          refId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PK_Date]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
-                          cachedName="Year"
+                          cachedName="PK_Date"
+                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FullDate]"
+                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[PK_Date]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Year (yyyy)]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Year (yyyy)"
                           externalMetadataColumnId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Year]" />
+                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Year (yyyy)]" />
                         <inputColumn
-                          refId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Quarter]"
+                          refId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Month_Of_Year]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
-                          cachedName="Quarter"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Quarter]"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Quarter]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Month]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="Month"
+                          cachedName="Month_Of_Year"
                           externalMetadataColumnId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Month]"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Month]" />
+                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Month_Of_Year]" />
                         <inputColumn
-                          refId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DayOfWeek]"
+                          refId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Quarter_Of_Year]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
-                          cachedName="DayOfWeek"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DayOfWeek]"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[DayOfWeek]" />
+                          cachedName="Quarter_Of_Year"
+                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Quarter]"
+                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Quarter_Of_Year]" />
                         <inputColumn
-                          refId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Weekend]"
+                          refId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Day_Of_Year]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
-                          cachedName="Weekend"
-                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Weekend]"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Weekend]" />
+                          cachedName="Day_Of_Year"
+                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Day]"
+                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Day_Of_Year]" />
                         <inputColumn
-                          refId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MonthName]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
+                          refId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MonthName_str]"
+                          cachedDataType="wstr"
                           cachedLength="50"
-                          cachedName="MonthName"
+                          cachedName="MonthName_str"
                           externalMetadataColumnId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MonthName]"
-                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[MonthName]" />
+                          lineageId="Package\Sequence Container\Load DimDate\Data Conversion.Outputs[Data Conversion Output].Columns[MonthName_str]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DayOfWeek_str]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="DayOfWeek_str"
+                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DayOfWeek]"
+                          lineageId="Package\Sequence Container\Load DimDate\Data Conversion.Outputs[Data Conversion Output].Columns[DayOfWeek_str]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Weekend_str]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Weekend_str"
+                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Weekend]"
+                          lineageId="Package\Sequence Container\Load DimDate\Data Conversion.Outputs[Data Conversion Output].Columns[Weekend_str]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Week_Of_Year]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Week_Of_Year"
+                          externalMetadataColumnId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WeekOfYear]"
+                          lineageId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output].Columns[Week_Of_Year]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -5253,7 +4024,7 @@
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MonthName]"
                           dataType="wstr"
-                          length="20"
+                          length="50"
                           name="MonthName" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Quarter]"
@@ -5266,22 +4037,17 @@
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DayOfWeek]"
                           dataType="wstr"
-                          length="20"
+                          length="50"
                           name="DayOfWeek" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Weekend]"
                           dataType="wstr"
-                          length="20"
+                          length="50"
                           name="Weekend" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WeekOfYear]"
                           dataType="i4"
                           name="WeekOfYear" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Season]"
-                          dataType="wstr"
-                          length="20"
-                          name="Season" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -5313,8 +4079,13 @@
               </components>
               <paths>
                 <path
-                  refId="Package\Sequence Container\Load DimDate.Paths[Flat File Source Output]"
+                  refId="Package\Sequence Container\Load DimDate.Paths[Data Conversion Output]"
                   endId="Package\Sequence Container\Load DimDate\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Data Conversion Output"
+                  startId="Package\Sequence Container\Load DimDate\Data Conversion.Outputs[Data Conversion Output]" />
+                <path
+                  refId="Package\Sequence Container\Load DimDate.Paths[Flat File Source Output]"
+                  endId="Package\Sequence Container\Load DimDate\Data Conversion.Inputs[Data Conversion Input]"
                   name="Flat File Source Output"
                   startId="Package\Sequence Container\Load DimDate\CSV DimDate.Outputs[Flat File Source Output]" />
               </paths>
@@ -5499,7 +4270,7 @@
     design-time-name="Package\Sequence Container\DimCustomer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="112.8,41.6"
           Id="Package\Sequence Container\DimCustomer\Lookup"
@@ -5551,9 +4322,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5587,9 +4356,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5616,37 +4383,37 @@
         <NodeLayout
           Size="119.2,41.6"
           Id="Package\Sequence Container\Is DimDate empty?\DimDate"
-          TopLeft="298.571429207009,105.529411672205" />
+          TopLeft="298.571429207009,106.529411657304" />
         <NodeLayout
           Size="129.6,41.6"
           Id="Package\Sequence Container\Is DimDate empty?\Row Count"
-          TopLeft="313.57142923894,201.011764618744" />
+          TopLeft="314.571429224039,203.011764588942" />
         <EdgeLayout
           Id="Package\Sequence Container\Is DimDate empty?.Paths[OLE DB Source Output]"
-          TopLeft="358.171429207009,147.129411672205">
+          TopLeft="358.171429207009,148.129411657304">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="20.2000000319311,53.882352946539"
+              EndConnector="21.2000000170299,54.8823529316379"
               Start="0,0"
-              End="20.2000000319311,46.382352946539">
+              End="21.2000000170299,47.3823529316379">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,22.9411764732695" />
+                    End="0,23.4411764658189" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,22.9411764732695"
-                    Point2="0,26.9411764732695"
-                    Point3="4,26.9411764732695" />
+                    Point1="0,23.4411764658189"
+                    Point2="0,27.4411764658189"
+                    Point3="4,27.4411764658189" />
                   <mssgle:LineSegment
-                    End="16.2000000319311,26.9411764732695" />
+                    End="17.2000000170299,27.4411764658189" />
                   <mssgle:CubicBezierSegment
-                    Point1="16.2000000319311,26.9411764732695"
-                    Point2="20.2000000319311,26.9411764732695"
-                    Point3="20.2000000319311,30.9411764732695" />
+                    Point1="17.2000000170299,27.4411764658189"
+                    Point2="21.2000000170299,27.4411764658189"
+                    Point3="21.2000000170299,31.4411764658189" />
                   <mssgle:LineSegment
-                    End="20.2000000319311,46.382352946539" />
+                    End="21.2000000170299,47.3823529316379" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5675,41 +4442,55 @@
     design-time-name="Package\Sequence Container\Load DimDate">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="140.8,41.6"
           Id="Package\Sequence Container\Load DimDate\CSV DimDate"
           TopLeft="410.999993875623,85.9999987185002" />
         <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Sequence Container\Load DimDate\OLE DB Destination"
-          TopLeft="406.999993935227,186.999997213483" />
+          Size="155.2,41.6"
+          Id="Package\Sequence Container\Load DimDate\Data Conversion"
+          TopLeft="401.999994009733,182.999997273088" />
         <EdgeLayout
           Id="Package\Sequence Container\Load DimDate.Paths[Flat File Source Output]"
-          TopLeft="481.399993875623,127.5999987185">
+          TopLeft="480.499993942678,127.5999987185">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="10.8000000596044,59.3999984949827"
+              EndConnector="0,55.3999985545873"
               Start="0,0"
-              End="10.8000000596044,51.8999984949827">
+              End="0,47.8999985545873">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,25.6999992474913" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,25.6999992474913"
-                    Point2="0,29.6999992474913"
-                    Point3="4,29.6999992474913" />
+                    End="0,47.8999985545873" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Sequence Container\Load DimDate\OLE DB Destination"
+          TopLeft="395.99999409914,291.999995648861" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Load DimDate.Paths[Data Conversion Output]"
+          TopLeft="480.399994054437,224.599997273088">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,67.3999983757735"
+              Start="0,0"
+              End="0,59.8999983757735">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="6.80000005960443,29.6999992474913" />
-                  <mssgle:CubicBezierSegment
-                    Point1="6.80000005960443,29.6999992474913"
-                    Point2="10.8000000596044,29.6999992474913"
-                    Point3="10.8000000596044,33.6999992474913" />
-                  <mssgle:LineSegment
-                    End="10.8000000596044,51.8999984949827" />
+                    End="0,59.8999983757735" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
