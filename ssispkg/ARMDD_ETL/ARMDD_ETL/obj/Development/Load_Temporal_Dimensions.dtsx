@@ -11,8 +11,8 @@
   DTS:LocaleID="2070"
   DTS:ObjectName="Load_Temporal_Dimensions"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{9175DCB6-F350-4C2C-BE12-95EE1FD068F3}">
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{D4D82F7F-DA49-4540-896C-45738DACFC0C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>

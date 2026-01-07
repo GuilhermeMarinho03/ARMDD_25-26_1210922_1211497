@@ -11,8 +11,8 @@
   DTS:LocaleID="2070"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="103"
-  DTS:VersionGUID="{D925B1DE-41F1-447A-AA8F-01324E9BF743}">
+  DTS:VersionBuild="104"
+  DTS:VersionGUID="{1CF6671C-C834-4A36-B78C-6AACDF3A3594}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1744,7 +1744,7 @@
                           cachedDataType="i4"
                           cachedName="SiteID"
                           errorOrTruncationOperation="Copy Column"
-                          lineageId="Package\Sequence Container\DimCustomer\431:invalid"
+                          lineageId="Package\Sequence Container\DimCustomer\439:invalid"
                           truncationRowDisposition="FailComponent"
                           usageType="readWrite">
                           <properties>
@@ -1765,7 +1765,7 @@
                           cachedLength="255"
                           cachedName="Name"
                           errorOrTruncationOperation="Copy Column"
-                          lineageId="Package\Sequence Container\DimCustomer\432:invalid"
+                          lineageId="Package\Sequence Container\DimCustomer\440:invalid"
                           name="SiteName"
                           truncationRowDisposition="FailComponent"
                           usageType="readWrite">
@@ -1785,7 +1785,7 @@
                           cachedDataType="bool"
                           cachedName="IsSite"
                           errorOrTruncationOperation="Copy Column"
-                          lineageId="Package\Sequence Container\DimCustomer\433:invalid"
+                          lineageId="Package\Sequence Container\DimCustomer\441:invalid"
                           truncationRowDisposition="FailComponent"
                           usageType="readWrite">
                           <properties>
@@ -1806,7 +1806,7 @@
                           cachedLength="255"
                           cachedName="SiteURL"
                           errorOrTruncationOperation="Copy Column"
-                          lineageId="Package\Sequence Container\DimCustomer\434:invalid"
+                          lineageId="Package\Sequence Container\DimCustomer\442:invalid"
                           truncationRowDisposition="FailComponent"
                           usageType="readWrite">
                           <properties>
@@ -1827,7 +1827,7 @@
                           cachedLength="255"
                           cachedName="SiteName"
                           errorOrTruncationOperation="Copy Column"
-                          lineageId="Package\Sequence Container\DimCustomer\435:invalid"
+                          lineageId="Package\Sequence Container\DimCustomer\443:invalid"
                           name="Name"
                           truncationRowDisposition="FailComponent"
                           usageType="readWrite">
@@ -1849,7 +1849,7 @@
                           cachedLength="20"
                           cachedName="Initials"
                           errorOrTruncationOperation="Copy Column"
-                          lineageId="Package\Sequence Container\DimCustomer\436:invalid"
+                          lineageId="Package\Sequence Container\DimCustomer\444:invalid"
                           truncationRowDisposition="FailComponent"
                           usageType="readWrite">
                           <properties>
@@ -1870,7 +1870,7 @@
                           cachedLength="10"
                           cachedName="CurrencyCode"
                           errorOrTruncationOperation="Copy Column"
-                          lineageId="Package\Sequence Container\DimCustomer\437:invalid"
+                          lineageId="Package\Sequence Container\DimCustomer\445:invalid"
                           truncationRowDisposition="FailComponent"
                           usageType="readWrite">
                           <properties>
@@ -1889,7 +1889,7 @@
                           cachedDataType="dbDate"
                           cachedName="CreateDate"
                           errorOrTruncationOperation="Copy Column"
-                          lineageId="Package\Sequence Container\DimCustomer\438:invalid"
+                          lineageId="Package\Sequence Container\DimCustomer\446:invalid"
                           truncationRowDisposition="FailComponent"
                           usageType="readWrite">
                           <properties>
@@ -2047,13 +2047,13 @@
                           cachedLength="255"
                           cachedName="Name"
                           externalMetadataColumnId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
-                          lineageId="Package\Sequence Container\DimCustomer\432:invalid" />
+                          lineageId="Package\Sequence Container\DimCustomer\440:invalid" />
                         <inputColumn
                           refId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CreateDate]"
                           cachedDataType="dbDate"
                           cachedName="CreateDate"
                           externalMetadataColumnId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CreateDate]"
-                          lineageId="Package\Sequence Container\DimCustomer\438:invalid" />
+                          lineageId="Package\Sequence Container\DimCustomer\446:invalid" />
                         <inputColumn
                           refId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LastUpdateDate]"
                           cachedDataType="dbDate"
@@ -2065,7 +2065,7 @@
                           cachedDataType="i4"
                           cachedName="SiteID"
                           externalMetadataColumnId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SiteID]"
-                          lineageId="Package\Sequence Container\DimCustomer\431:invalid" />
+                          lineageId="Package\Sequence Container\DimCustomer\439:invalid" />
                         <inputColumn
                           refId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SiteName]"
                           cachedCodepage="1252"
@@ -2073,13 +2073,13 @@
                           cachedLength="255"
                           cachedName="SiteName"
                           externalMetadataColumnId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SiteName]"
-                          lineageId="Package\Sequence Container\DimCustomer\435:invalid" />
+                          lineageId="Package\Sequence Container\DimCustomer\443:invalid" />
                         <inputColumn
                           refId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IsSite]"
                           cachedDataType="bool"
                           cachedName="IsSite"
                           externalMetadataColumnId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IsSite]"
-                          lineageId="Package\Sequence Container\DimCustomer\433:invalid" />
+                          lineageId="Package\Sequence Container\DimCustomer\441:invalid" />
                         <inputColumn
                           refId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SiteURL]"
                           cachedCodepage="1252"
@@ -2087,7 +2087,7 @@
                           cachedLength="255"
                           cachedName="SiteURL"
                           externalMetadataColumnId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SiteURL]"
-                          lineageId="Package\Sequence Container\DimCustomer\434:invalid" />
+                          lineageId="Package\Sequence Container\DimCustomer\442:invalid" />
                         <inputColumn
                           refId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Initials]"
                           cachedCodepage="1252"
@@ -2095,7 +2095,7 @@
                           cachedLength="20"
                           cachedName="Initials"
                           externalMetadataColumnId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Initials]"
-                          lineageId="Package\Sequence Container\DimCustomer\436:invalid" />
+                          lineageId="Package\Sequence Container\DimCustomer\444:invalid" />
                         <inputColumn
                           refId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CurrencyCode]"
                           cachedCodepage="1252"
@@ -2103,7 +2103,7 @@
                           cachedLength="10"
                           cachedName="CurrencyCode"
                           externalMetadataColumnId="Package\Sequence Container\DimCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CurrencyCode]"
-                          lineageId="Package\Sequence Container\DimCustomer\437:invalid" />
+                          lineageId="Package\Sequence Container\DimCustomer\445:invalid" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
