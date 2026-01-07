@@ -1,4 +1,4 @@
-IF NOT EXISTS (SELECT name FROM sys.tables WHERE name = 'DimSite')
+IF NOT EXISTS (SELECT 1 FROM sys.tables WHERE name = 'DimSite')
 BEGIN
     CREATE TABLE dbo.DimSite
     (
@@ -12,6 +12,8 @@ BEGIN
         CurrencyCode VARCHAR(10) NULL,
         CreateDate DATE NULL,
         LastUpdateDate DATE NULL,
+        IsCurrent BIT NOT NULL DEFAULT 1,
+
         CONSTRAINT PK_DimSite PRIMARY KEY CLUSTERED (SiteKey ASC)
     );
 END

@@ -1,4 +1,4 @@
-IF NOT EXISTS (SELECT name FROM sys.tables WHERE name = 'DimCustomer')
+IF NOT EXISTS (SELECT 1 FROM sys.tables WHERE name = 'DimCustomer')
 BEGIN
     CREATE TABLE dbo.DimCustomer
     (
@@ -12,7 +12,11 @@ BEGIN
         RegistrationDate DATE NULL,
         LastUpdateDate DATE NULL,
         CountryID VARCHAR(10) NULL,
+
+        IsCurrent BIT NOT NULL DEFAULT 1,
+
         CONSTRAINT PK_DimCustomer PRIMARY KEY CLUSTERED (CustomerKey ASC),
         CONSTRAINT UQ_DimCustomer_CustomerID UNIQUE (CustomerID)
     );
 END
+GO
